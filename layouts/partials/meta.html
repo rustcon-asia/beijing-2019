@@ -1,0 +1,6 @@
+{{- $favicon := .Site.Params.favicon | relURL }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ .Hugo.Generator }}
+
+<link rel="shorcut icon" href="{{ $favicon }}">

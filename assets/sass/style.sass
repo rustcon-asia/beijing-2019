@@ -1,0 +1,129 @@
+{{- $fontAwesomeVersion := .Site.Params.assets.fontAwesomeVersion }}
+{{- $fontAwesomeUrl     := printf "https://use.fontawesome.com/releases/v%s/css/all.css" $fontAwesomeVersion }}
+@charset "utf-8"
+@import url(https://fonts.googleapis.com/icon?family=Titillium+Web:300,400,600,700|Inconsolata:300,400,600,700)
+@import url({{ $fontAwesomeUrl }})
+
+// Misc
+$twitter-blue: #1da1f3
+
+// TiKV variables
+$tikv-red: #ed1a3b
+$tikv-blue: #353558
+
+@import "bulma/sass/utilities/initial-variables"
+@import "bulma/sass/utilities/functions"
+
+// Bulma variable overrides
+$red: $tikv-red
+$blue: $tikv-blue
+$primary: $red
+$secondary: $blue
+$link: $red
+$danger: $orange
+$navbar-burger-color: $blue
+$family-sans-serif: "Titillium Web", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$family-monospace: "Inconsolata", monosapce
+$card-shadow: none
+$notification-padding: 1rem 1rem
+$navbar-dropdown-radius: none
+$navbar-dropdown-boxed-shadow: none
+$navbar-dropdown-arrow: $primary !important
+
+@import "bulma/sass/utilities/derived-variables"
+
+@import "bulma/bulma"
+
+.card-header-icon
+  .icon
+    color: $primary
+
+.is-definition
+  color: $info
+  font-weight: 600
+
+  &:hover
+    cursor: help
+
+=logo($min, $max)
+  @extend .image
+  margin: 0 auto
+  min-width: $min
+  max-width: $max
+
+.is-home-logo
+  +logo(40%, 60%)
+
+.is-cncf-logo
+  +logo(40%, 55%)
+  margin-top: 2rem
+
+.is-footer-image
+  +logo(30%, 35%)
+
+.has-text-red
+  color: $red
+
+=branded-button($bgColor)
+  border: none
+  background-color: $bgColor
+  color: white
+
+  &:hover
+    background-color: darken($bgColor, 5%)
+
+.button
+  &.is-twitter
+    +branded-button($twitter-blue)
+
+.navbar .is-version
+  margin-right: 1rem
+
+.content
+  figure
+    margin: 0 auto
+
+    +tablet
+      width: 70%
+
+    +mobile
+      width: 100%
+
+    figcaption
+      margin-top: .5rem
+      font-style: normal
+
+  ol, ul
+    li .highlight
+      margin-bottom: 1rem
+
+.footer
+  &.is-dark
+    background-color: $secondary
+
+    a
+      color: $white
+      font-size: 1.1rem
+
+      &:hover
+        color: $grey-light
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  .main
+    flex: 1
+
+  &.is-blog-page
+    .card
+      border: 1px solid $grey-lighter
+      border-radius: $radius-small
+
+.is-navbar-version
+  background-color: $success
+  color: white
+  border: 1px solid $success
+  padding: .25rem .5rem
+  border-radius: $radius-small

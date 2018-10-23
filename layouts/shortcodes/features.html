@@ -1,0 +1,29 @@
+{{- $features := .Site.Data.features }}
+<table>
+  <thead>
+    <tr>
+      <th>
+        Feature
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $features }}
+    {{- $link := .link | default "docs/architecture" }}
+    {{- $url  := $link | relURL }}
+    <tr>
+      <td>
+        <a href="{{ $url }}">
+          {{ .name }}
+        </a>
+      </td>
+      <td>
+        {{ .description | markdownify }}
+      </td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

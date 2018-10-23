@@ -1,0 +1,87 @@
+{{ define "main" }}
+{{- $shortDesc := .Site.Params.description.brief | markdownify }}
+{{- $longDesc  := .Site.Params.description.long | markdownify }}
+{{- $logo      := .Site.Params.logos.color }}
+{{- $cncfLogo  := "img/logos/cncf-color.png" | relURL }}
+{{- $features  := .Site.Data.features }}
+<section class="hero is-fullheight">
+  <div class="hero-head">
+    {{ partial "navbar.html" . }}
+  </div>
+
+  <div class="hero-body has-background-white-ter">
+    <div class="container has-text-centered">
+      <img class="is-home-logo" src="{{ $logo }}" alt="Main TiKV logo">
+
+      <br />
+
+      <p class="title is-size-1-desktop is-size-3-touch is-spaced">
+        <span class="has-text-weight-bold">
+          {{ .Site.Title }}
+        </span>
+        
+        <span class="has-text-primary has-text-weight-bold">:</span>
+
+        <span class="has-text-grey has-text-weight-light">
+          {{ $shortDesc }}
+        </span>
+      </p>
+
+      <p class="subtitle is-size-3 is-size-4-tablet is-size-5-mobile">
+        {{ $longDesc }}
+      </p>
+
+      <div class="buttons is-centered">
+        <a class="button is-medium is-rounded is-large is-primary" href="/docs/getting-started">
+          Getting started
+        </a>
+        <a class="button is-medium is-rounded is-large is-primary" href="/docs/architecture">
+          Architecture
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section has-background-primary">
+  <div class="container">
+    <div class="columns">
+      {{- range $features }}
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              {{ .name }}
+            </p>
+            {{- with .icon }}
+            <div class="card-header-icon">
+              <span class="icon">
+                <i class="fas {{ . }}" aria-hidden="true"></i>
+              </span>
+            </div>
+            {{- end }}
+          </header>
+          {{- with .description }}
+          <div class="card-content">
+            <div class="content">
+              {{ . | markdownify }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p class="title is-size-4 is-size-5-mobile">
+     TiKV is a <a>Cloud Native Computing Foundation</a> member project
+    </p>
+
+    <img class="image is-cncf-logo" src="{{ $cncfLogo }}" alt="Cloud Native Computing Foundation logo">
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,54 @@
+{{- $year      := now.Year }}
+{{- $logo      := .Site.Params.logos.white | relURL }}
+{{- $docs      := where .Site.RegularPages "Section" "docs" }}
+{{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
+{{- $latest    := .Site.Params.versions.latest }}
+<footer class="footer is-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img class="image is-footer-image" src="{{ $logo }}" alt="TiKV footer logo">
+      </div>
+
+      <div class="column">
+        <h5 class="is-size-5 has-text-weight-bold has-text-white">
+          Docs
+        </h4>
+
+        <hr class="hr has-background-primary">
+
+        <ul>
+          {{- range $docs }}
+          <li>
+            <a href="{{ .URL }}">
+              {{ .Title }}
+            </a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+      <div class="column">
+
+        <h5 class="is-size-5 has-text-weight-bold has-text-white">
+          Project
+        </h4>
+
+        <hr class="hr has-background-primary">
+
+        <ul>
+          <li>
+            <a href="/adopters">
+              TiKV Adopters
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- columns -->
+
+    <div class="has-text-centered">
+      <span class="has-text-grey-light">
+        &copy; {{ $year }} TiKV Authors
+      </span>
+    </div>
+  </div> <!-- container -->
+</footer>

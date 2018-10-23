@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{- $currentVersion := index (split .File.Path "/") 1 }}
+{{ partial "docs/hero.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          {{ partial "docs/version-warning.html" . }}
+
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

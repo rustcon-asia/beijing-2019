@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{- $posts := .Pages }}
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-three-quarters">
+        {{- range $posts }}
+        {{- .Render "blog/card" }}
+        {{- end }}
+      </div>
+      <div class="column is-one-quarter">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

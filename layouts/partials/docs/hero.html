@@ -1,0 +1,44 @@
+{{- $docs           := where .Site.Pages "Section" "docs" }}
+{{- $description    := .Params.description }}
+{{- $currentUrl     := .URL }}
+{{- $isNew          := .Params.new }}
+{{ partial "navbar.html" . }}
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-size-1 is-size-2-mobile{{ if $description }} is-spaced{{ end }}">
+        {{ .Title }}
+        
+        {{- if $isNew }}
+        <a class="button is-warning is-uppercase">New</a>
+        {{- end }}
+      </h1>
+  
+      {{- with $description }}
+      <h2 class="subtitle is-size-3 is-size-4-mobile">
+        {{ . }}
+      </h2>
+      {{- end }}
+
+      
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-medium is-boxed">
+      <div class="container">
+        <ul>
+          {{- range $docs }}
+          {{- $isCurrentPage := eq .URL $currentUrl }}
+          <li{{ if $isCurrentPage }} class="is-active"{{ end }}>
+            <a href="{{ .URL }}">
+              {{ .Title }}
+            </a>
+          </li>
+          {{- end }} <!-- range $docs -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
