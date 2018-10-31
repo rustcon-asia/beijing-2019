@@ -29,7 +29,7 @@ js  = ["jquery-3.3.1", "app"]
 css = ["syntax"]
 
 [params.socialmedia]
-twitter = "tikv"
+twitter = "tikvproject"
 github  = "https://github.com/tikv/tikv"
 
 [outputs]
