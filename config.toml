@@ -1,0 +1,43 @@
+title = "TiKV"
+baseURL = "https://tikv.org"
+languageCode = "en-us"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+favicon = "favicon.png"
+
+[params.versions]
+latest = "2.1-rc2"
+
+[params.description]
+brief = "A distributed transactional key-value database"
+long = "Based on the design of [Google Spanner](https://ai.google/research/pubs/pub39966) and [HBase](https://hbase.apache.org), but simpler to manage and without dependencies on any distributed filesystem"
+
+[params.fonts]
+sansserif = "Titillium Web"
+monospace = "Inconsolata"
+
+[params.logos]
+white = "img/logos/horizontal/white/tikv-horizontal-white.png"
+color = "img/logos/horizontal/color/tikv-horizontal-color.png"
+
+[params.assets]
+fontAwesomeVersion = "5.3.1"
+js  = ["jquery-3.3.1", "app"]
+css = ["syntax"]
+
+[params.socialmedia]
+twitter = "tikv"
+github  = "https://github.com/tikv/tikv"
+
+[outputs]
+home = ["HTML", "REDIRECTS"]
+
+[outputFormats.REDIRECTS]
+mediaType = "text/netlify"
+baseName = "_redirects"
+
+[mediaTypes."text/netlify"]
+delimiter = ""

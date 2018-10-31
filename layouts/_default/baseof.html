@@ -1,0 +1,18 @@
+{{- $isHome   := .IsHome }}
+{{- $pageType := cond $isHome "home" .Section }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }} &ndash; {{ .Site.Params.description.brief }}{{ end }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body class="{{ if not $isHome }}has-navbar-fixed-top {{ end }}page is-{{ $pageType }}-page">
+    <main class="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "javascript.html" . }}
+  </body>
+</html>

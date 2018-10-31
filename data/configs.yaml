@@ -1,0 +1,4 @@
+rocksdb:
+- name: max-background-jobs
+  description: The maximum number of concurrent background jobs (compactions and flushes)
+  default: 8

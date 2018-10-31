@@ -1,0 +1,32 @@
+{{- $group   := .Get 0 }}
+{{- $configs := index .Site.Data.configs $group }}
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Default
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $configs }}
+    <tr>
+      <td>
+        <code>{{ .name }}</code>
+      </td>
+      <td>
+        {{ .description | markdownify }}
+      </td>
+      <td>
+        {{ .default }}
+      </td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

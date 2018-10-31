@@ -1,0 +1,12 @@
+- name: Geo-replication
+  description: TiKV uses the [Raft](https://raft.github.io/) consensus algorithm and the [Placement Driver](/docs/architecture#placement-driver) to support geo-replication.
+  icon: fa-globe
+- name: Horizontal scalability
+  description: With the [Placement Driver](/docs/architecture#placement-driver) and carefully designed Raft groups, TiKV excels in horizontal scalability and can easily scale to 100+ terabytes of data.
+  icon: fa-ruler-horizontal
+- name: Consistent distributed transactions
+  description: Similar to Google's [Spanner](https://ai.google/research/pubs/pub39966), TiKV supports externally consistent distributed transactions.
+  icon: fa-align-center
+- name: Coprocessor support
+  description: Similar to [Hbase](https://hbase.apache.org), TiKV implements a coprocessor framework to support distributed computing.
+  icon: fa-microchip

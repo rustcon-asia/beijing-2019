@@ -1,0 +1,15 @@
+{{- $type := .type }}
+{{- $icon := .icon }}
+{{- $text := .text }}
+<div class="notification is-{{ $type }}">
+  <article class="media">
+    <div class="media-left">
+      <span class="icon">
+        <i class="fas {{ $icon }}"></i>
+      </span>
+    </div>
+    <div class="media-content">
+      {{ $text }}
+    </div>
+  </article>
+</div>

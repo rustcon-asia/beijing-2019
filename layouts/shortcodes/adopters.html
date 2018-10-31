@@ -1,0 +1,41 @@
+{{- $adopters := .Site.Data.adopters }}
+<table>
+  <thead>
+    <tr>
+      <th>
+        Company
+      </th>
+      <th>
+        Industry
+      </th>
+      <th>
+        Success story
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $adopters }}
+    <tr>
+      <td>
+        <a href="{{ .url }}">
+          {{ .name }}
+        </a>
+      </td>
+      <td>
+        {{ .industry }}
+      </td>
+      <td>
+        {{- $numStories := len .stories }}
+        {{- range $idx, $story := .stories }}
+        <a href="{{ $story.url }}">
+          {{ $story.language }}
+        </a>
+        {{- if ne (sub $numStories 1) $idx }}
+        <br />
+        {{- end }}
+        {{- end }}
+      </td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

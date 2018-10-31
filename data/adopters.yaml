@@ -1,0 +1,22 @@
+- name: Mobike
+  url: https://en.wikipedia.org/wiki/Mobike
+  industry: Ridesharing
+  stories:
+  - language: English
+    url: https://www.pingcap.com/blog/Use-Case-TiDB-in-Mobike/
+  - language: Chinese
+    url: https://www.pingcap.com/cases-cn/user-case-mobike/
+- name: Jinri Toutiao
+  url: https://en.wikipedia.org/wiki/Toutiao
+  industry: Mobile news platform
+  stories:
+  - language: Chinese
+    url: https://www.pingcap.com/cases-cn/user-case-toutiao/
+- name: Yiguo.com
+  url: https://www.crunchbase.com/organization/shanghai-yiguo-electron-business
+  industry: E-commerce
+  stories:
+  - language: English
+    url: https://www.datanami.com/2018/02/22/hybrid-database-capturing-perishable-insights-yiguo/
+  - language: Chinese
+    url: https://www.pingcap.com/cases-cn/user-case-yiguo

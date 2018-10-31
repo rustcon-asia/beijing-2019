@@ -1,0 +1,44 @@
+{{- $date := dateFormat "Monday, Jan 2, 2006" .Date }}
+<a href="{{ .URL }}">
+  <div class="card">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <nav class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <span class="is-size-3 is-size-4-mobile">
+                  {{ .Title }}
+                </span>
+              </div>
+            </div>
+            {{- with .Params.author }}
+            <div class="level-right">
+              <div class="level-item">
+                <span class="is-size-4 is-size-5-mobile">
+                  {{ . }}
+                </span>
+              </div>
+            </div>
+            {{- end }}
+          </nav>
+
+          <p class="subtitle is-6 has-text-weight-light">
+            {{ $date }}
+          </p>
+        </div>
+      </div>
+
+      <hr class="hr">
+  
+      <div class="content">
+        {{- with .Summary }}
+        {{ . | markdownify }}
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</a>
+<br />
+
+
