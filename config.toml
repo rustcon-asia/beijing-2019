@@ -22,6 +22,8 @@ monospace = "Inconsolata"
 [params.logos]
 white = "img/logos/horizontal/white/tikv-horizontal-white.png"
 color = "img/logos/horizontal/color/tikv-horizontal-color.png"
+black = "img/logos/horizontal/black/tikv-horizontal-black.png"
+cncf  = "img/logos/cncf-color.png"
 
 [params.assets]
 fontAwesomeVersion = "5.3.1"
@@ -31,6 +33,15 @@ css = ["syntax"]
 [params.socialmedia]
 twitter = "tikvproject"
 github  = "https://github.com/tikv/tikv"
+
+[[params.home.buttons]]
+text = "Overview"
+link = "/docs"
+
+[[params.home.buttons]]
+text = "Concepts and architecture"
+link = "/docs/architecture"
+
 
 [outputs]
 home = ["HTML", "REDIRECTS"]

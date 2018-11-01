@@ -32,37 +32,32 @@ $navbar-dropdown-arrow: $primary !important
 
 @import "bulma/sass/utilities/derived-variables"
 
+$colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white)), $colors)
+
 @import "bulma/bulma"
 
-.card-header-icon
-  .icon
-    color: $primary
-
-.is-definition
-  color: $info
-  font-weight: 600
-
-  &:hover
-    cursor: help
-
-=logo($min, $max)
-  @extend .image
+=logo($tablet, $touch)
   margin: 0 auto
-  min-width: $min
-  max-width: $max
+  +tablet
+    width: percentage($tablet / 100)
+  +touch
+    width: percentage($touch / 100)
+
 
 .is-home-logo
-  +logo(40%, 60%)
+  +logo(40, 60)
+  +tablet
+    margin-bottom: 1.5rem
+
+  +touch
+    margin-bottom: 2rem
 
 .is-cncf-logo
-  +logo(40%, 55%)
-  margin-top: 2rem
+  +logo(40, 60)
+  margin-top: 2.5rem
 
 .is-footer-image
-  +logo(30%, 35%)
-
-.has-text-red
-  color: $red
+  +logo(50, 30)
 
 =branded-button($bgColor)
   border: none
@@ -71,13 +66,6 @@ $navbar-dropdown-arrow: $primary !important
 
   &:hover
     background-color: darken($bgColor, 5%)
-
-.button
-  &.is-twitter
-    +branded-button($twitter-blue)
-
-.navbar .is-version
-  margin-right: 1rem
 
 .content
   figure
@@ -108,6 +96,7 @@ $navbar-dropdown-arrow: $primary !important
       &:hover
         color: $grey-light
 
+// Ensures sticky footer glued to the bottom of the page
 .page
   display: flex
   flex-direction: column
@@ -116,14 +105,19 @@ $navbar-dropdown-arrow: $primary !important
   .main
     flex: 1
 
-  &.is-blog-page
-    .card
-      border: 1px solid $grey-lighter
-      border-radius: $radius-small
-
 .is-navbar-version
+  margin-left: 1rem
   background-color: $success
   color: white
   border: 1px solid $success
   padding: .25rem .5rem
   border-radius: $radius-small
+
+.is-home-page
+  .hero
+    p a
+      font-weight: bold
+      color: $dark !important
+
+    .buttons
+      margin-top: 2.5rem

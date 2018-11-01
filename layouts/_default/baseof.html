@@ -7,7 +7,9 @@
     <title>{{ block "title" . }}{{ .Site.Title }} &ndash; {{ .Site.Params.description.brief }}{{ end }}</title>
     {{ partial "css.html" . }}
   </head>
-  <body class="{{ if not $isHome }}has-navbar-fixed-top {{ end }}page is-{{ $pageType }}-page">
+  <body class="has-navbar-fixed-top page is-{{ $pageType }}-page">
+    {{ partial "navbar.html" . }}
+
     <main class="main">
       {{ block "main" . }}{{ end }}
     </main>

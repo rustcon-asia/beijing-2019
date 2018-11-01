@@ -2,7 +2,7 @@
 title: Getting started
 description: Run TiKV in your local environment using Docker Compose
 weight: 1
-new: true
+draft: true
 ---
 
 This guide describes how to quickly deploy a TiKV testing cluster using [Docker Compose](https://docs.docker.com/compose/) on a single machine. Currently, this installation method is supported only on Linux.

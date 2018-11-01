@@ -1,15 +1,12 @@
 {{ define "main" }}
 {{- $shortDesc := .Site.Params.description.brief | markdownify }}
 {{- $longDesc  := .Site.Params.description.long | markdownify }}
-{{- $logo      := .Site.Params.logos.color }}
-{{- $cncfLogo  := "img/logos/cncf-color.png" | relURL }}
+{{- $buttons   := .Site.Params.home.buttons }}
+{{- $logo      := .Site.Params.logos.color | relURL }}
+{{- $cncfLogo  := .Site.Params.logos.cncf | relURL }}
 {{- $features  := .Site.Data.features }}
-<section class="hero is-fullheight">
-  <div class="hero-head">
-    {{ partial "navbar.html" . }}
-  </div>
-
-  <div class="hero-body has-background-white-ter">
+<section class="hero is-medium is-light">
+  <div class="hero-body">
     <div class="container has-text-centered">
       <img class="is-home-logo" src="{{ $logo }}" alt="Main TiKV logo">
 
@@ -32,12 +29,11 @@
       </p>
 
       <div class="buttons is-centered">
-        <a class="button is-medium is-rounded is-large is-primary" href="/docs/getting-started">
-          Getting started
+        {{- range $buttons }}
+        <a class="button is-medium is-rounded is-large is-primary" href="{{ .link | relURL }}">
+          {{ .text }}
         </a>
-        <a class="button is-medium is-rounded is-large is-primary" href="/docs/architecture">
-          Architecture
-        </a>
+        {{- end }}
       </div>
     </div>
   </div>
@@ -55,7 +51,7 @@
             </p>
             {{- with .icon }}
             <div class="card-header-icon">
-              <span class="icon">
+              <span class="icon has-text-primary">
                 <i class="fas {{ . }}" aria-hidden="true"></i>
               </span>
             </div>

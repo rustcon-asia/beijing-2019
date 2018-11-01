@@ -1,14 +1,16 @@
-{{- $isHome         := .IsHome }}
-{{- $isDocs         := eq .Section "docs" }}
-{{- $whiteLogo      := .Site.Params.logos.white | relURL }}
-{{- $colorLogo      := .Site.Params.logos.color | relURL }}
-{{- $navbarLogo     := cond $isHome $colorLogo $whiteLogo }}
-{{- $twitter        := .Site.Params.socialmedia.twitter }}
-{{- $github         := .Site.Params.socialmedia.github }}
-{{- $docs           := where .Site.RegularPages "Section" "docs" }}
-{{- $blogPosts      := where .Site.RegularPages "Section" "blog" }}
-{{- $latest         := .Site.Params.versions.latest }}
-<nav class="navbar is-fixed-top{{ if $isHome }} has-shadow has-background-white{{ else }} is-black{{ end }}">
+{{- $isHome     := .IsHome }}
+{{- $isDocs     := eq .Section "docs" }}
+{{- $whiteLogo  := .Site.Params.logos.white | relURL }}
+{{- $colorLogo  := .Site.Params.logos.color | relURL }}
+{{- $blackLogo  := .Site.Params.logos.black | relURL }}
+{{- $navbarLogo := cond $isHome $blackLogo $whiteLogo }}
+{{- $twitter    := .Site.Params.socialmedia.twitter }}
+{{- $github     := .Site.Params.socialmedia.github }}
+{{- $docs       := where .Site.RegularPages "Section" "docs" }}
+{{- $blogPosts  := where .Site.RegularPages "Section" "blog" }}
+{{- $latest     := .Site.Params.versions.latest }}
+{{- $color      := cond $isHome "light" "black" }}
+<nav class="navbar is-fixed-top is-{{ $color }}">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ .Site.BaseURL | relURL }}">
@@ -67,7 +69,7 @@
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
-              <a class="button is-twitter" target="_blank" href="https://twitter.com/{{ $twitter }}">
+              <a class="button is-twitter-blue" target="_blank" href="https://twitter.com/{{ $twitter }}">
                 <span class="icon has-text-white">
                   <i class="fab fa-twitter"></i>
                 </span>
@@ -76,7 +78,7 @@
                 </span>
               </a>
 
-              <a class="button is-github is-black{{ if $isDocs }} is-inverted{{ end }}" target="_blank" href="{{ $github }}">
+              <a class="button is-black{{ if $isDocs }} is-inverted{{ end }}" target="_blank" href="{{ $github }}">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>

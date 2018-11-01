@@ -20,3 +20,19 @@
     url: https://www.datanami.com/2018/02/22/hybrid-database-capturing-perishable-insights-yiguo/
   - language: Chinese
     url: https://www.pingcap.com/cases-cn/user-case-yiguo
+- name: Yuanfudao.com
+  url: https://www.crunchbase.com/organization/yuanfudao
+  industry: EdTech
+  stories:
+  - language: English
+    url: https://www.pingcap.com/blog/2017-08-08-tidbforyuanfudao
+  - language: Chinese
+    url: https://www.pingcap.com/cases-cn/user-case-yuanfudao
+- name: Ele.me
+  url: https://www.ele.me/home/
+  industry: Food delivery
+  stories:
+  - language: English
+    url: https://www.pingcap.com/blog/use-case-tidb-in-eleme/
+  - language: Chinese
+    url: https://www.pingcap.com/cases-cn/user-case-eleme-1/

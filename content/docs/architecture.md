@@ -6,7 +6,7 @@ weight: 3
 
 This page discusses the core concepts and architecture behind TiKV, including:
 
-* The [APIs](#apis) and [client libraries](#clients) that applications can use to interact with TiKV
+* The [APIs](#apis) that applications can use to interact with TiKV
 * The basic [system architecture](#system) underlying TiKV
 * The anatomy of each [instance](#instance) in a TiKV installation
 * The role of core system components, including the [Placement Driver](#placement-driver), [Store](#store), [Region](#region), and [Node](#node)
@@ -22,8 +22,6 @@ API | Description | Atomicity | Use when...
 :---|:------------|:----------|:-----------
 Raw | A lower-level key-value API for interacting directly with individual key-value pairs. | Single key | Your application doesn't require distributed transactions or multi-version concurrency control (**MVCC**)
 Transactional | A higher-level key-value API that provides ACID semantics | Multiple keys | Your application requires distributed transactions and/or MVCC
-
-## Client libraries {#clients}
 
 ## System architecture {#system}
 
