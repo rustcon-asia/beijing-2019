@@ -1,7 +1,6 @@
 {{- $year      := now.Year }}
 {{- $logo      := .Site.Params.logos.white | relURL }}
-{{- $docs      := where .Site.RegularPages "Section" "docs" }}
-{{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
+{{- $docs      := where .Site.Pages "Section" "docs" }}
 {{- $latest    := .Site.Params.versions.latest }}
 <footer class="footer is-dark">
   <div class="container">

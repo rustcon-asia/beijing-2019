@@ -6,8 +6,7 @@
 {{- $navbarLogo := cond $isHome $blackLogo $whiteLogo }}
 {{- $twitter    := .Site.Params.socialmedia.twitter }}
 {{- $github     := .Site.Params.socialmedia.github }}
-{{- $docs       := where .Site.RegularPages "Section" "docs" }}
-{{- $blogPosts  := where .Site.RegularPages "Section" "blog" }}
+{{- $docs       := where .Site.Pages "Section" "docs" }}
 {{- $latest     := .Site.Params.versions.latest }}
 {{- $color      := cond $isHome "light" "black" }}
 <nav class="navbar is-fixed-top is-{{ $color }}">
