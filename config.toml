@@ -42,6 +42,10 @@ link = "/docs"
 text = "Concepts and architecture"
 link = "/docs/architecture"
 
+[[params.home.buttons]]
+text = "Blog"
+link = "/blog"
+
 
 [outputs]
 home = ["HTML", "REDIRECTS"]

@@ -1,0 +1,21 @@
+{{- $author := .Params.author }}
+{{- $date   := dateFormat "January 2, 2006" .Date }}
+<section class="hero is-black">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-size-1 has-text-weight-light{{ if $author }} is-spaced{{ end }}">
+        {{ .Title }}
+      </h1>
+      {{- with $author }}
+      <p class="subtitle is-size-3">
+        {{ . }}
+      </p>
+      {{- end }}
+      {{- if ne .URL "/blog/" }}
+      <p class="is-size-5">
+        {{ $date }}
+      </p>
+      {{- end }}
+    </div>
+  </div>
+</section>

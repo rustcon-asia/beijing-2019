@@ -1,44 +1,31 @@
-{{- $date := dateFormat "Monday, Jan 2, 2006" .Date }}
+{{- $date      := dateFormat "January 2, 2006" .Date }}
+{{- $hasAuthor := .Params.author }}
 <a href="{{ .URL }}">
   <div class="card">
     <div class="card-content">
-      <div class="media">
-        <div class="media-content">
-          <nav class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <span class="is-size-3 is-size-4-mobile">
-                  {{ .Title }}
-                </span>
-              </div>
-            </div>
-            {{- with .Params.author }}
-            <div class="level-right">
-              <div class="level-item">
-                <span class="is-size-4 is-size-5-mobile">
-                  {{ . }}
-                </span>
-              </div>
-            </div>
-            {{- end }}
-          </nav>
+      <p class="title is-size-1 has-text-weight-light{{ if $hasAuthor }} is-spaced{{ end }}">
+        {{ .Title }}
+      </p>
 
-          <p class="subtitle is-6 has-text-weight-light">
-            {{ $date }}
-          </p>
-        </div>
-      </div>
+      {{- with .Params.author }}
+      <p class="subtitle is-size-3">
+        {{ . }}
+      </p>
+      {{- end }}
 
-      <hr class="hr">
-  
-      <div class="content">
-        {{- with .Summary }}
-        {{ . | markdownify }}
-        {{- end }}
+      <p class="is-size-4">
+        {{ $date }}
+      </p>
+
+      {{- with .Summary }}
+      <hr class="has-background-primary" />
+
+      <div class="content is-medium">
+        {{ . }}
       </div>
+      {{- end }}
     </div>
   </div>
 </a>
-<br />
 
 

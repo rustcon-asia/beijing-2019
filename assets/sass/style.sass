@@ -24,7 +24,6 @@ $danger: $orange
 $navbar-burger-color: $blue
 $family-sans-serif: "Titillium Web", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $family-monospace: "Inconsolata", monosapce
-$card-shadow: none
 $notification-padding: 1rem 1rem
 $navbar-dropdown-radius: none
 $navbar-dropdown-boxed-shadow: none
@@ -113,6 +112,10 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white)), $colors)
   padding: .25rem .5rem
   border-radius: $radius-small
 
+.section
+  &.is-black
+    background-color: $black
+ 
 .is-home-page
   .hero
     p a

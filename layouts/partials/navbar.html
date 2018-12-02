@@ -1,5 +1,4 @@
 {{- $isHome     := .IsHome }}
-{{- $isDocs     := eq .Section "docs" }}
 {{- $whiteLogo  := .Site.Params.logos.white | relURL }}
 {{- $colorLogo  := .Site.Params.logos.color | relURL }}
 {{- $blackLogo  := .Site.Params.logos.black | relURL }}
@@ -9,6 +8,7 @@
 {{- $docs       := where .Site.Pages "Section" "docs" }}
 {{- $latest     := .Site.Params.versions.latest }}
 {{- $color      := cond $isHome "light" "black" }}
+{{- $blogPosts  := where .Site.RegularPages "Section" "blog" }}
 <nav class="navbar is-fixed-top is-{{ $color }}">
   <div class="container">
     <div class="navbar-brand">
@@ -65,6 +65,26 @@
           </div>
         </div>
 
+        {{- if gt 0 (len $blogPosts) }}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            Blog
+          </div>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/blog">
+              Blog home
+            </a>
+
+            <hr class="navbar-divider" />
+
+            {{- range first 5 $blogPosts }}
+            {{ .Render "blog/navbar-link" }}
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
+
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
@@ -77,7 +97,7 @@
                 </span>
               </a>
 
-              <a class="button is-black{{ if $isDocs }} is-inverted{{ end }}" target="_blank" href="{{ $github }}">
+              <a class="button is-black{{ if not $isHome }} is-inverted{{ end }}" target="_blank" href="{{ $github }}">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>

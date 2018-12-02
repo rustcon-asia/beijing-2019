@@ -1,0 +1,12 @@
+{{- $posts := where .Site.RegularPages "Section" "blog" }}
+<section class="section is-black">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        {{- range $posts }}
+        {{ .Render "blog/card" }}
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
