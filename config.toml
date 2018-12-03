@@ -27,7 +27,7 @@ cncf  = "img/logos/cncf-color.png"
 
 [params.assets]
 fontAwesomeVersion = "5.3.1"
-js  = ["jquery-3.3.1", "app"]
+js  = ["jquery-3.3.1", "anchor", "app"]
 css = ["syntax"]
 
 [params.socialmedia]
