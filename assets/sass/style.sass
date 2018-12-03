@@ -35,13 +35,14 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white)), $colors)
 
 @import "bulma/bulma"
 
+@import "blog"
+
 =logo($tablet, $touch)
   margin: 0 auto
   +tablet
     width: percentage($tablet / 100)
   +touch
     width: percentage($touch / 100)
-
 
 .is-home-logo
   +logo(40, 60)

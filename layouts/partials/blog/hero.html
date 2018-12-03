@@ -1,20 +1,31 @@
 {{- $author := .Params.author }}
 {{- $date   := dateFormat "January 2, 2006" .Date }}
+{{- $twitterUrl := printf "https://twitter.com/intent/tweet?text=%s %s" (printf "Check out this post from the TiKV blog: \"%s\"" .Title) .Permalink }}
 <section class="hero is-black">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-size-1 has-text-weight-light{{ if $author }} is-spaced{{ end }}">
+      <h1 class="title is-size-1 is-size-2-mobile has-text-white has-text-weight-light{{ if $author }} is-spaced{{ end }}">
         {{ .Title }}
       </h1>
       {{- with $author }}
-      <p class="subtitle is-size-3">
+      <p class="subtitle is-size-3 is-size-4-mobile has-text-white-bis has-text-weight-light">
         {{ . }}
       </p>
       {{- end }}
       {{- if ne .URL "/blog/" }}
-      <p class="is-size-5">
+      <p class="is-size-5 has-text-grey-lighter has-text-weight-light">
         {{ $date }}
       </p>
+
+      <br />
+
+      <div class="buttons">
+        <a class="button is-twitter-blue twitter-share-button" href="{{ $twitterUrl }}">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+        </a>
+      </div>
       {{- end }}
     </div>
   </div>

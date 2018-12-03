@@ -2,6 +2,7 @@
 {{- $logo      := .Site.Params.logos.white | relURL }}
 {{- $docs      := where .Site.Pages "Section" "docs" }}
 {{- $latest    := .Site.Params.versions.latest }}
+{{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
 <footer class="footer is-dark">
   <div class="container">
     <div class="columns">
@@ -26,8 +27,8 @@
           {{- end }}
         </ul>
       </div>
-      <div class="column">
 
+      <div class="column">
         <h5 class="is-size-5 has-text-weight-bold has-text-white">
           Project
         </h4>
@@ -42,6 +43,33 @@
           </li>
         </ul>
       </div>
+
+      {{- if gt (len $blogPosts) 0 }}
+      <div class="column">
+        <h5 class="is-size-5 has-text-weight-bold has-text-white">
+          Blog
+        </h4>
+
+        <hr class="hr has-background-primary">
+
+        <ul>
+          {{- range first 5 $blogPosts }}
+          <li>
+            <a href="{{ .URL }}">
+              {{ .Title }}
+            </a>
+          </li>
+          {{- end }}
+          {{- if gt (len $blogPosts) 5 }}
+          <li>
+            <a href="/blog">
+              More...
+            </a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
     </div> <!-- columns -->
 
     <br /><br />
