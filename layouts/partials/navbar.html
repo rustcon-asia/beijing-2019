@@ -65,11 +65,10 @@
           </div>
         </div>
 
-        {{- if gt 0 (len $blogPosts) }}
         <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-link">
+          <a class="navbar-link" href="/blog">
             Blog
-          </div>
+          </a>
 
           <div class="navbar-dropdown">
             <a class="navbar-item" href="/blog">
@@ -81,9 +80,14 @@
             {{- range first 5 $blogPosts }}
             {{ .Render "blog/navbar-link" }}
             {{- end }}
+
+            <hr class="navbar-divider" />
+
+            <a class="navbar-item" href="/blog">
+              More...
+            </a>
           </div>
-        </div>
-        {{- end }}
+        </a>
 
         <div class="navbar-item">
           <div class="field is-grouped">

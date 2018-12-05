@@ -1,12 +1,12 @@
 ---
 title: "TiKV 2.1: More Raft, Less Hotspots"
 date: 2018-12-04
-author: Siddon Tang
+author: Siddon Tang, Chief Engineer at PingCAP and TiKV Project Lead
 ---
 
-**Author:** Siddon Tang, Chief Engineer at PingCAP and TiKV Project Lead
-
 The TiKV team is proud to announce today that TiKV 2.1 is ready for General Availability (GA). TiKV is an open-source distributed transactional [key-value store](https://github.com/tikv/tikv) built in Rust.
+
+<!--more-->
 
 Since its [2.0](https://www.pingcap.com/blog/tidb-2-0-announcement/) release back in April 2018, TiKV became a member project of the [Cloud Native Computing Foundation](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv-in-the-sandbox/), so it can be an independent foundational building block for other systems.
 

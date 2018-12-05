@@ -5,6 +5,8 @@ date: 2018-11-30
 
 On November 30, 2018, TiKV 2.1 GA is released. See the following updates in this release. Compared with TiKV 2.0, this release has great improvements in stability, performance, and usability.
 
+<!--more-->
+
 ## Coprocessor
 
 - Add more built-in functions

@@ -9,9 +9,10 @@
       </h1>
       {{- with $author }}
       <p class="subtitle is-size-3 is-size-4-mobile has-text-white-bis has-text-weight-light">
-        {{ . }}
+        {{ . | markdownify }}
       </p>
       {{- end }}
+      
       {{- if ne .URL "/blog/" }}
       <p class="is-size-5 has-text-grey-lighter has-text-weight-light">
         {{ $date }}

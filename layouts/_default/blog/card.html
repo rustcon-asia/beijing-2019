@@ -1,42 +1,56 @@
 {{- $date       := dateFormat "January 2, 2006" .Date }}
 {{- $hasAuthor  := .Params.author }}
 {{- $twitterUrl := printf "https://twitter.com/intent/tweet?text=%s %s" (printf "Check out this post from the TiKV blog: \"%s\"" .Title) .Permalink }}
-<a href="{{ .URL }}">
-  <div class="card has-background-black">
-    <div class="card-content">
-      <p class="title is-size-2 is-size-3-mobile has-text-white has-text-weight-light">
+<div class="card has-background-black">
+  <div class="card-content">
+    <p class="title is-blog-card-title is-size-2 is-size-3-mobile has-text-weight-light{{ if .Params.author }} is-spaced{{ end }}">
+      <a class="has-text-white" href="{{ .URL }}">
         {{ .Title }}
-      </p>
+      </a>
+    </p>
 
-      {{- with .Params.author }}
-      <p class="subtitle is-size-4 is-size-5-mobile has-text-white-bis has-text-weight-light">
-        {{ . }}
-      </p>
-      {{- end }}
+    {{- with .Params.author }}
+    <p class="subtitle is-size-4 is-size-5-mobile has-text-white-bis has-text-weight-light">
+      {{ . | markdownify }}
+    </p>
+    {{- end }}
 
-      <p class="is-size-5 is-size-6-mobile has-text-grey-lighter has-text-weight-light">
-        {{ $date }}
-      </p>
+    <p class="is-size-5 is-size-6-mobile has-text-grey-lighter has-text-weight-light">
+      {{ $date }}
+    </p>
 
-      {{- with .Summary }}
-      <hr class="has-background-primary" />
+    {{- with .Summary }}
+    <hr class="has-background-primary" />
 
-      <div class="content is-medium has-text-grey-lighter">
-        {{ . }}
-      </div>
-      {{- end }}
+    <div class="content is-medium has-text-grey-lighter">
+      {{ . | plainify }}
+    </div>
+    {{- end }}
 
-      <br />
+    <br />
 
-      <div class="buttons">
+    <nav class="level">
+      <div class="level-left">
         <a class="button is-twitter-blue twitter-share-button" href="{{ $twitterUrl }}">
           <span class="icon">
             <i class="fab fa-twitter"></i>
           </span>
         </a>
       </div>
-    </div>
+
+      <div class="level-right">
+        <a class="button is-primary" href="{{ .URL }}">
+          <span class="icon">
+            <i class="fas fa-book-open"></i>
+          </span>
+          <span>
+            Read
+          </span>
+        </a>
+      </div>
+    </nav>
   </div>
-</a>
+</div>
+
 
 

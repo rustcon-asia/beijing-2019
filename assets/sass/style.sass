@@ -35,8 +35,6 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white)), $colors)
 
 @import "bulma/bulma"
 
-@import "blog"
-
 =logo($tablet, $touch)
   margin: 0 auto
   +tablet
@@ -67,7 +65,12 @@ $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white)), $colors)
   &:hover
     background-color: darken($bgColor, 5%)
 
+
+
 .content
+  &.is-blog-content
+    margin-bottom: 8rem
+
   figure
     margin: 0 auto
 
