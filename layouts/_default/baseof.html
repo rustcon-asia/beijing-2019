@@ -1,8 +1,12 @@
 {{- $isHome   := .IsHome }}
+{{- $isServer := .Site.IsServer }}
 {{- $pageType := cond $isHome "home" .Section }}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{- if not $isServer }}
+    {{ partial "google-analytics.html" . }}
+    {{- end }}
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }} &ndash; {{ .Site.Params.description.brief }}{{ end }}</title>
     {{ partial "css.html" . }}
