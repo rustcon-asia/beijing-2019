@@ -1,27 +1,27 @@
 {{- $year      := now.Year }}
 {{- $logo      := .Site.Params.logos.white | relURL }}
-{{- $docs      := where .Site.Pages "Section" "docs" }}
+{{- $orga      := .Site.Data.organizers }}
 {{- $latest    := .Site.Params.versions.latest }}
 {{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
 <footer class="footer is-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
-        <img class="image is-footer-image" src="{{ $logo }}" alt="TiKV footer logo">
+        <img class="image is-footer-image" src="{{ $logo }}" alt="RustCon footer logo">
       </div>
 
       <div class="column">
         <h5 class="is-size-5 has-text-weight-bold has-text-white">
-          Docs
+          Organizers
         </h4>
 
         <hr class="hr has-background-primary">
 
         <ul>
-          {{- range $docs }}
+          {{- range $orga }}
           <li>
-            <a href="{{ .URL }}">
-              {{ .Title }}
+            <a href="{{ .url }}">
+              {{ .name }}
             </a>
           </li>
           {{- end }}
@@ -30,17 +30,32 @@
 
       <div class="column">
         <h5 class="is-size-5 has-text-weight-bold has-text-white">
-          Project
+          Conference
         </h4>
 
         <hr class="hr has-background-primary">
 
         <ul>
           <li>
-            <a href="/adopters">
-              TiKV Adopters
+            <a href="/about">
+              About
             </a>
           </li>
+          <li>
+            <a href="/about">
+              Call for Proposals
+            </a>
+          </li>
+          <li>
+            <a href="/about">
+              Tickets
+            </a>
+          </li>
+          <li>
+              <a href="{{ .Site.Params.socialMedia.github }}">
+                Github
+              </a>
+            </li>
         </ul>
       </div>
 
@@ -76,7 +91,7 @@
 
     <div class="has-text-centered">
       <span class="is-size-5 is-size-6-mobile has-text-grey-light">
-        &copy; {{ $year }} TiKV Authors
+        &copy; {{ $year }} RustCon Asia Organizers
       </span>
     </div>
   </div> <!-- container -->

@@ -2,6 +2,7 @@ serve:
 	hugo server \
 		--buildDrafts \
 		--buildFuture \
+		--bind 0.0.0.0 \
 		--disableFastRender
 
 production-build:

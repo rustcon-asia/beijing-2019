@@ -1,12 +1,24 @@
-- name: Geo-replication
-  description: TiKV uses the [Raft](https://raft.github.io/) consensus algorithm and the [Placement Driver](/docs/architecture#placement-driver) to support geo-replication.
-  icon: fa-globe
-- name: Horizontal scalability
-  description: With the [Placement Driver](/docs/architecture#placement-driver) and carefully designed Raft groups, TiKV excels in horizontal scalability and can easily scale to 100+ terabytes of data.
+- name: All Skill Levels
+  description: |
+    Our content will be catered towards having something for all of our attendees.
+
+    From never ran `cargo` to core committer.
   icon: fa-ruler-horizontal
-- name: Consistent distributed transactions
-  description: Similar to Google's [Spanner](https://ai.google/research/pubs/pub39966), TiKV supports externally consistent distributed transactions.
-  icon: fa-align-center
-- name: Coprocessor support
-  description: Similar to [Hbase](https://hbase.apache.org), TiKV implements a coprocessor framework to support distributed computing.
+- name: Local Connections
+  description: |
+    Get a chance to meet with other Rust users in your area and learn how they're using Rust.
+
+    Need a job, an employee? We want to help.
   icon: fa-microchip
+- name: Global Reach
+  description: |
+    We invite speakers from both Asia & worldwide to share with us in either Chinese or English.
+
+    Live translation will be available.
+  icon: fa-align-center
+- name: Warm & Welcoming
+  description: |
+    As the Rust community has shown, a diverse set of attendees creates a better event.
+    
+    We follow the [Berlin Code of Conduct](https://berlincodeofconduct.org/) for this event.
+  icon: fa-globe

@@ -1,4 +1,4 @@
-title = "TiKV"
+title = "RustCon Asia 2019"
 baseURL = "https://tikv.org"
 languageCode = "en-us"
 pygmentsCodeFences = true
@@ -7,14 +7,20 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 favicon = "favicon.png"
-googleAnalyticsId = "UA-130734531-1"
+googleAnalyticsId = "TODO"
 
-[params.versions]
-latest = "2.1"
+[params.dates]
+start = "1 April"
+end = "2 April"
+year = "2019"
+
+[params.location]
+name = "TODO"
+address = "TODO"
 
 [params.description]
-brief = "A distributed transactional key-value database"
-long = "Based on the design of [Google Spanner](https://ai.google/research/pubs/pub39966) and [HBase](https://hbase.apache.org), but simpler to manage and without dependencies on any distributed filesystem"
+brief = "Beijing"
+long = "Join us for the first Rust Conference in Asia!"
 
 [params.fonts]
 sansserif = "Titillium Web"
@@ -24,7 +30,9 @@ monospace = "Inconsolata"
 white = "img/logos/horizontal/white/tikv-horizontal-white.png"
 color = "img/logos/horizontal/color/tikv-horizontal-color.png"
 black = "img/logos/horizontal/black/tikv-horizontal-black.png"
-cncf  = "img/logos/cncf-color.png"
+pingcap = "img/logos/pingcap.png"
+baidu = "img/logos/baidu.png"
+nervos = "img/logos/nervos.png"
 
 [params.assets]
 fontAwesomeVersion = "5.3.1"
@@ -32,16 +40,15 @@ js  = ["jquery-3.3.1", "anchor", "app"]
 css = ["syntax"]
 
 [params.socialmedia]
-twitter = "tikvproject"
-github  = "https://github.com/tikv/tikv"
+github  = "https://github.com/rustcon-asia/beijing-2019"
 
 [[params.home.buttons]]
-text = "Overview"
-link = "/docs"
+text = "Tickets"
+link = "/tickets"
 
 [[params.home.buttons]]
-text = "Concepts and architecture"
-link = "/docs/architecture"
+text = "Call for Proposals"
+link = "/cfp"
 
 [[params.home.buttons]]
 text = "Blog"

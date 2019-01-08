@@ -6,14 +6,16 @@
 {{- $twitter    := .Site.Params.socialmedia.twitter }}
 {{- $github     := .Site.Params.socialmedia.github }}
 {{- $docs       := where .Site.Pages "Section" "docs" }}
-{{- $latest     := .Site.Params.versions.latest }}
+{{- $dateStart  := .Site.Params.dates.start }}
+{{- $dateEnd    := .Site.Params.dates.end }}
+{{- $dateYear   := .Site.Params.dates.year }}
 {{- $color      := cond $isHome "light" "black" }}
 {{- $blogPosts  := where .Site.RegularPages "Section" "blog" }}
 <nav class="navbar is-fixed-top is-{{ $color }}">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ .Site.BaseURL | relURL }}">
-        <img src="{{ $navbarLogo }}" alt="TiKV main logo">
+        <img src="{{ $navbarLogo }}" alt="RustCon Asia main logo">
       </a>
 
       <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -27,43 +29,22 @@
       <div class="navbar-start">
         <div class="navbar-item">
           <span class="is-version has-text-weight-bold">
-            Version
+            Happening
           </span>
           <span class="is-hidden-desktop">
-            {{ $latest }}
+            {{ $dateStart }} - {{ $dateEnd }}, {{ $dateYear }}
           </span>
           <div class="is-navbar-version has-text-weight-bold is-hidden-touch">
-            {{ $latest }}
+            {{ $dateStart }} - {{ $dateEnd }}, {{ $dateYear }}
           </div>
         </div>
       </div>
 
       <div class="navbar-end">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="/docs">
-            Docs
-          </a>
 
-          <div class="navbar-dropdown is-hidden-touch">
-            {{- range $docs }}
-            <a class="navbar-item" href="{{ .URL }}">
-              {{ .Title }}
-            </a>
-            {{- end }} <!-- range $docs -->
-          </div>
-        </div>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-link">
-            Project
-          </div>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="/adopters">
-              TiKV adopters
-            </a>
-          </div>
-        </div>
+        <a class="navbar-item" href="/about">
+          About
+        </a>
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="/blog">
@@ -92,21 +73,21 @@
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
-              <a class="button is-twitter-blue" target="_blank" href="https://twitter.com/{{ $twitter }}">
+              <!-- <a class="button is-twitter-blue" target="_blank" href="https://twitter.com/{{ $twitter }}">
                 <span class="icon has-text-white">
                   <i class="fab fa-twitter"></i>
                 </span>
                 <span>
                   Twitter
                 </span>
-              </a>
+              </a> -->
 
-              <a class="button is-black{{ if not $isHome }} is-inverted{{ end }}" target="_blank" href="{{ $github }}">
+              <a class="button is-black{{ if not $isHome }} is-inverted{{ end }}" target="_blank" href="{{ .Site.Params.tickets }}">
                 <span class="icon">
-                  <i class="fab fa-github"></i>
+                  <i class="fas fa-ticket-alt"></i>
                 </span>
                 <span>
-                  GitHub
+                  Tickets
                 </span>
               </a>
 
