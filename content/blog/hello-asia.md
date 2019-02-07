@@ -4,17 +4,17 @@ date: 2019-01-08
 author: Ana, RustCon Team
 ---
 
-Today we are very proud to announce RustCon Asia {{< param "dates.year" >}}, happening {{< param "dates.start" >}} to {{< param "dates.end" >}} at {{< param "location.name" >}} in Beijing, China. The conference will span two days, including 1 day of talks and 1 day of workshops.
+Today we are very proud to announce RustCon Asia {{< param "dates.year" >}}, happening {{< param "dates.start" >}} to {{< param "dates.end" >}} in Beijing, China. The conference will span two days, including 1.5 days of talks and 2 days of workshops.
 
 <!--more-->
 
-We chose Beijing to host this conference because it makes the most sense. All of our organizers are based in China, and we are most familiar with the Chinese community. We hope to make the conference annual, and we hope to have it migrate between places to ensure everyone can access the event.
+We chose Beijing to host this conference because it makes the most sense. All of our organizers are based in China, and we are most familiar with the Chinese community. We hope to make the conference annual, and we hope to have it migrate between places to ensure we can highlight different local communities in Asia.
 
 While we're still organizing the final details, you can expect the following things from us:
 
 * A space to meet new friends, new or old.
 * English and Chinese talks. Live transcription will be available on-site, so you'll be able to follow along even if you don't speak both languages.
-* Hands-on workshops (not transcribed).
+* Hands-on workshops (workshops are not transcribed).
 * A blind CFP process, mirroring that of Rust LatAm, Rust Belt Rust and RustFest, to ensure a high quality of content.
 * Members of organizations using Rust in production like Mozilla, Nervos, and PingCAP.
 * An open, inviting atmosphere where everyone is welcome.

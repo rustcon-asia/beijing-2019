@@ -1,6 +1,6 @@
-# The TiKV website
+# The RustCon Asia website
 
-This repo houses the assets used to build the [TiKV](../tikv) website available at https://tikv.org.
+This repo houses the assets used to build the [RustCon Asia](rustcon.asia) website available at [https://rustcon.asia](https://rustcon.asia).
 
 ## Publishing
 

@@ -10,8 +10,8 @@ favicon = "favicon.png"
 googleAnalyticsId = "TODO"
 
 [params.dates]
-start = "1 April"
-end = "2 April"
+start = "20 April"
+end = "23 April"
 year = "2019"
 
 [params.location]
@@ -27,9 +27,9 @@ sansserif = "Titillium Web"
 monospace = "Inconsolata"
 
 [params.logos]
-white = "img/logos/horizontal/white/tikv-horizontal-white.png"
-color = "img/logos/horizontal/color/tikv-horizontal-color.png"
-black = "img/logos/horizontal/black/tikv-horizontal-black.png"
+white = "img/logos/logo-white.svg"
+color = "img/logos/logo-black.svg"
+black = "img/logos/logo-black.svg"
 pingcap = "img/logos/pingcap.png"
 baidu = "img/logos/baidu.png"
 nervos = "img/logos/nervos.png"

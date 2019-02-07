@@ -10,7 +10,7 @@ Founding organizers from Nervos and PingCAP knew that something must be done. La
 
 ## RustCon Asia
 
-> Asia has a long history of Rust use.
+> Asia has a long history of Rust use...
 
 **People in Asia are using Rust.** With a 'Rust China Community' group on Wechat of over 300 users and other Rust centric learning groups (some with over 80 members), we wanted to connect with other Rust communities across Asia, & Worldwide.
 
