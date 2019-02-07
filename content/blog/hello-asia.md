@@ -4,7 +4,7 @@ date: 2019-01-08
 author: Ana, RustCon Team
 ---
 
-Today we are very proud to announce RustCon Asia {{< param "dates.year" >}}, happening {{< param "dates.start" >}} to {{< param "dates.end" >}} in Beijing, China. The conference will span two days, including 1.5 days of talks and 2 days of workshops.
+Today we are very proud to announce RustCon Asia 2019, happening April 20th to 23rd in Beijing, China. The conference will span two days, including 1.5 days of talks and 2 days of workshops.
 
 <!--more-->
 
