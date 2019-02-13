@@ -42,13 +42,13 @@ css = ["syntax"]
 [params.socialmedia]
 github  = "https://github.com/rustcon-asia/beijing-2019"
 
-[[params.home.buttons]]
-text = "Tickets"
-link = "/tickets"
+# [[params.home.buttons]]
+# text = "Tickets"
+# link = "/tickets"
 
 [[params.home.buttons]]
 text = "Call for Proposals"
-link = "/cfp"
+link = "https://cfp.rustcon.asia/"
 
 [[params.home.buttons]]
 text = "Blog"

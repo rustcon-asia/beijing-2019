@@ -23,10 +23,8 @@ While we're still organizing the final details, you can expect the following thi
 
 You can propose a talk or workshop here:
 
-// TODO
+[cfp.rustcon.asia](https://cfp.rustcon.asia/events/rustcon-asia)
 
-You can buy earlybird tickets here:
-
-// TODO
+**You can buy earlybird tickets soon!** We're still working out the complications of ticket sales, sorry! Check back next week!
 
 RustCon Asia is organized by members of PingCAP (makers of TiKV), Nervos (makers of Cryptape), and Baidu X-Lab (makers of Mesalock Linux). For some of us, it's our first time organizing an event like this. So please give us constructive feedback if you see something wrong.
