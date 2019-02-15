@@ -8,6 +8,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
 favicon = "favicon.png"
 googleAnalyticsId = "TODO"
+chinese_tickets = "http://www.huodongxing.com/event/6479456003900"
+english_tickets = ""
 
 [params.dates]
 start = "20 April"
@@ -42,9 +44,14 @@ css = ["syntax"]
 [params.socialmedia]
 github  = "https://github.com/rustcon-asia/beijing-2019"
 
-# [[params.home.buttons]]
-# text = "Tickets"
-# link = "/tickets"
+[[params.home.buttons]]
+text = "门票（中文）"
+link = "http://www.huodongxing.com/event/647945600390"
+
+[[params.home.buttons]]
+text = "Tickets (Eng) - Next week"
+link = ""
+
 
 [[params.home.buttons]]
 text = "Call for Proposals"

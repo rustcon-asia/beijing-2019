@@ -25,6 +25,8 @@ You can propose a talk or workshop here:
 
 [cfp.rustcon.asia](https://cfp.rustcon.asia/events/rustcon-asia)
 
-**You can buy earlybird tickets soon!** We're still working out the complications of ticket sales, sorry! Check back next week!
+**You can buy tickets [in Chinese here](http://www.huodongxing.com/event/6479456003900)!** We're still verifying our accounts with our English sales provider, sorry! Check back next week!
 
-RustCon Asia is organized by members of PingCAP (makers of TiKV), Nervos (makers of Cryptape), and Baidu X-Lab (makers of Mesalock Linux). For some of us, it's our first time organizing an event like this. So please give us constructive feedback if you see something wrong.
+RustCon Asia is organized by members of PingCAP (makers of TiKV) and Nervos (makers of Cryptape). We thank Baidu X-Lab (makers of Mesalock Linux) for being our first sponsor.
+
+> For some of us, it's our first time organizing an event like this. So please give us constructive feedback if you see something wrong. [Email](ana@pingcap.com).

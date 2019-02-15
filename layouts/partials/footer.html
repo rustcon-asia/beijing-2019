@@ -1,6 +1,7 @@
 {{- $year      := now.Year }}
 {{- $logo      := .Site.Params.logos.white | relURL }}
 {{- $orga      := .Site.Data.organizers }}
+{{- $sponsors      := .Site.Data.sponsors }}
 {{- $latest    := .Site.Params.versions.latest }}
 {{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
 <footer class="footer is-dark">
@@ -27,6 +28,24 @@
           {{- end }}
         </ul>
       </div>
+
+    <div class="column">
+      <h5 class="is-size-5 has-text-weight-bold has-text-white">
+        Sponsors
+      </h4>
+
+      <hr class="hr has-background-primary">
+
+      <ul>
+        {{- range $sponsors }}
+        <li>
+          <a href="{{ .url }}">
+            {{ .name }}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
 
       <div class="column">
         <h5 class="is-size-5 has-text-weight-bold has-text-white">

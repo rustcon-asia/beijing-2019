@@ -4,6 +4,7 @@
 {{- $buttons   := .Site.Params.home.buttons }}
 {{- $logo      := .Site.Params.logos.color | relURL }}
 {{- $orga  := .Site.Data.organizers }}
+{{- $sponsors  := .Site.Data.sponsors }}
 {{- $baiduLogo  := .Site.Params.logos.baidu | relURL }}
 {{- $nervosLogo  := .Site.Params.logos.nervos | relURL }}
 {{- $features  := .Site.Data.features }}
@@ -76,7 +77,7 @@
 <section class="section">
   <div class="container has-text-centered">
     <p class="title is-size-4 is-size-5-mobile">
-     A Rust Community conference organized by a team from Nervos, PingCAP.
+     A Rust Community conference organized by:
     </p>
 
     <div class="columns level">
@@ -85,6 +86,21 @@
           <a href="{{ .url }}"><img class="image" src="{{ .logo }}" alt="{{ .name }}"></div></a>
       {{- end}}
     </div>
+
+    <p class="title is-size-4 is-size-5-mobile">
+      This event is sponsored by:
+     </p>
+
+    <div class="columns level">
+      {{- range $sponsors }}
+        <div class="column level">
+          <a href="{{ .url }}"><img class="image" src="{{ .logo }}" alt="{{ .name }}"></div></a>
+      {{- end}}
+    </div>
+    
+    <p class="title is-size-4 is-size-5-mobile">
+      <a href="mailto:ana@pingcap.com">Want to sponsor?</a>
+    </p>
   </div>
 </section>
 {{ end }}

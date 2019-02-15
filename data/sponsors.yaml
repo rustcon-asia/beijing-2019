@@ -1,0 +1,6 @@
+# - name: Baidu X-Lab
+#   url: http://xlab.baidu.com/en/
+#   logo: img/logos/baidu.png
+- name: Baidu X-Lab
+  url: http://xlab.baidu.com/en/
+  logo: img/logos/baidu.png
