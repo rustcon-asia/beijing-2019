@@ -1,6 +1,6 @@
 ---
 title: "Hello / 你好 Asia"
-date: 2019-01-08
+date: 2019-02-15
 author: Ana (飘飘熊) & Aimee (阿敏), RustCon Team
 ---
 
