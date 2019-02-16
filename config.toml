@@ -1,5 +1,5 @@
 title = "RustCon Asia 2019"
-baseURL = "https://tikv.org"
+baseURL = "https://rustcon.asia"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
