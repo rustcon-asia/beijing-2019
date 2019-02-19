@@ -18,8 +18,8 @@ end = "23 April"
 year = "2019"
 
 [params.location]
-name = "TODO"
-address = "TODO"
+name = "Hyatt Regency Beijing Wangjing"
+address = "Lei Shing Hong Center, 8 Guangshun South Street, Chaoyang District, Beijing, China"
 
 [params.description]
 brief = "Beijing"
