@@ -9,7 +9,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 favicon = "favicon.png"
 googleAnalyticsId = "TODO"
 chinese_tickets = "http://www.huodongxing.com/event/6479456003900"
-english_tickets = ""
+english_tickets = "https://ti.to/cryptape/rustcon-asia"
 cfp = "https://cfp.rustcon.asia/"
 
 [params.dates]
@@ -50,8 +50,8 @@ text = "门票（中文）"
 link = "http://www.huodongxing.com/event/6479456003900"
 
 [[params.home.buttons]]
-text = "Tickets (Eng) - Next week"
-link = ""
+text = "Tickets (Eng)"
+link = "https://ti.to/cryptape/rustcon-asia"
 
 
 [[params.home.buttons]]

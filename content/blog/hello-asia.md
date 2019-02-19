@@ -30,7 +30,7 @@ While we're still organizing the final details, you can expect the following thi
 
 **You can propose a talk or workshop [here](https://cfp.rustcon.asia/events/rustcon-asia)!**
 
-**You can buy tickets in Chinese [here](http://www.huodongxing.com/event/6479456003900)!** We're still verifying our accounts with our English sales provider, sorry! Check back next week!
+**You can buy tickets in Chinese [here](http://www.huodongxing.com/event/6479456003900) (Wechat Pay accepted), or English [here](https://ti.to/cryptape/rustcon-asia) (PayPal accepted)!**
 
 RustCon Asia is organized by members of [PingCAP](https://pingcap.com/) (makers of [TiKV](https://github.com/tikv/tikv)) and [Cryptape](https://www.cryptape.com/). We thank [Baidu X-Lab](http://xlab.baidu.com/) (makers of [Mesalock Linux](https://github.com/mesalock-linux)) for being our first sponsor.
 
