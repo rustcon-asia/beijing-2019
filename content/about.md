@@ -6,7 +6,7 @@ In 2018 several members of the Rust community in China began talking: Europe, No
 
 ## What about Asia?
 
-Founding organizers from Nervos and PingCAP knew that something must be done. With the support & assistance of the Rust Events team itself, as well as the RustFest Europe team, a conference began to take shape.
+Founding organizers from Cryptape and PingCAP knew that something must be done. With the support & assistance of the Rust Events team itself, as well as the RustFest Europe team, a conference began to take shape.
 
 ## RustCon Asia
 
@@ -16,8 +16,8 @@ Asia has a long history of Rust use...
 
 **Companies in Asia are using Rust.** 
 
-* PingCAP, based in Beijing, was one of the first production users of Rust in the (now CNCF) project [TiKV](http://tikv.org/).
-* Nervos is using Rust to build next trust layers in [Cryptape](https://www.cryptape.com/#/).
+* [PingCAP](http://pingcap.com/), based in Beijing, was one of the first production users of Rust in the (now CNCF) project [TiKV](http://tikv.org/).
+* [Cryptape](https://www.cryptape.com/#/) is using Rust to build next trust layers in [Nervos](http://nervos.org/).
 * Baidu X-Lab is using Rust to build a more secure Linux with their [MesaLock](https://github.com/mesalock-linux/) project.
 
 > Are you using Rust in production in Asia? Please tell us so we can highlight you!

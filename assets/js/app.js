@@ -17,5 +17,5 @@ $(function() {
   navbarToggle();
   docsAnchors();
 
-  console.log("Welcome to the TiKV docs!");
+  console.log("Welcome to the RustCon docs!");
 });
