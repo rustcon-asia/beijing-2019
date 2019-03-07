@@ -6,11 +6,11 @@ There are several ways to get tickets for RustCon Asia!
 
 <div class="buttons is-centered">
     <a class="button is-medium is-rounded is-large is-primary"
-        href="{{< param chinese_tickets >}}">
+        href="http://www.huodongxing.com/event/6479456003900">
         门票（中文）
     </a>
     <a class="button is-medium is-rounded is-large is-primary"
-        href="{{< param english_tickets >}}">
+        href="https://ti.to/cryptape/rustcon-asia">
         Tickets (English)
     </a>
 </div>
