@@ -46,13 +46,8 @@ css = ["syntax"]
 github  = "https://github.com/rustcon-asia/beijing-2019"
 
 [[params.home.buttons]]
-text = "门票（中文）"
-link = "http://www.huodongxing.com/event/6479456003900"
-
-[[params.home.buttons]]
-text = "Tickets (Eng)"
-link = "https://ti.to/cryptape/rustcon-asia"
-
+text = "Tickets / 门票"
+link = "/tickets"
 
 [[params.home.buttons]]
 text = "Call for Proposals"
