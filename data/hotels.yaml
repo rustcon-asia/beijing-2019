@@ -1,0 +1,73 @@
+- name:
+    en: Holiday Inn
+    cn: 北京方恒假日酒店
+  address:
+    en: Building 3, yard 6, Wangjing Futong East Street, Chaoyang District
+    cn: 朝阳区望京阜通东大街6号院3号楼
+  distance: 1KM
+  price: 820-990
+  discount: null
+  contact: 
+    name: Miki（张亚楠）
+    phone: +86 13810556922
+    email: miki.zhang@holidayinnfangheng.com
+- name:
+    en: Rosedale Hotel & Suites Beijing
+    cn: 北京珀丽酒店
+  address:
+    en: No.8 Jiangtai West Road, Chaoyang District
+    cn: 北京市朝阳区将台西路8号
+  distance: 2KM
+  price: 1000
+  discount:
+    code: RustCon Asia
+    price: ¥ 680
+  contact: 
+    name: Sophia （刘亚军）
+    phone: +86 133011662908
+    email: sales_sophialiu@rosedalebj.com
+- name:
+    en: Holiday Inn Express
+    cn: 北京智选假日酒店
+  address:
+    en: Building 6, Yard 6, Wangjing Futong East Street, Chaoyang District
+    cn: 朝阳区望京阜通东大街 6 号院 6 号楼
+  distance: 2KM
+  price: 760-830
+  discount: null
+  contact: null
+- name:
+    en: Crystal Orange Hotel (Beijing Jiuxianqiao Hotel)
+    cn: 桔子水晶酒店（北京酒仙桥店）
+  address:
+    en: No. 13, Jiuxianqiao Road, Chaoyang District
+    cn: 北京市朝阳区酒仙桥路13号
+  distance: 3KM
+  price: 560-820
+  discount: null
+  contact: null
+- name:
+    en: Qi Jian of All Season Hotel
+    cn: 全季柒间酒店
+  address:
+    en: Building 1, No. 241 Caochang, Yagezhuang Township, East fifth ring road, Chaoyang district
+    cn: 北京市朝阳区东五环路崖各庄乡草场 241 号1栋
+  distance: 4KM
+  price: 800
+  discount: null
+  contact: null
+- name:
+    en: Atour Hotel Beijing Sanyuan Bridge Branch
+    cn: 北京三元桥亚朵酒店
+  address:
+    en: Jingxin Building, No. A 2, Dongsanhuan North Road, Chaoyang District
+    cn: 北京市朝阳区东三环北路甲2号京信大厦
+  distance: 6KM
+  price: 600-750
+  discount:
+    code: RustCon Asia
+    price: 12%
+  contact: 
+    name: Kang (康经理)
+    phone: +86 15690351817
+    email: arour-hotel013@yaduo.com

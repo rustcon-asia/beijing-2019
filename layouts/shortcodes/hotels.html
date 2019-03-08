@@ -1,0 +1,65 @@
+
+<table class="table">
+    <tbody>
+        {{ range $index, $hotel := $.Site.Data.hotels }}
+            <tr>
+                <td colspan=2 class="">
+                    <strong>{{$hotel.name.en}}</strong> <br/>
+                    <strong>{{$hotel.name.cn}} </strong><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fa fa-location-arrow"></i>
+                    Address (地点)
+                </td>
+                <td>
+                        {{$hotel.address.en}} <br/>
+                        {{$hotel.address.cn}} <br/>
+                        (<i class="fa fa-ruler"></i> {{.distance}})
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fa fa-sun"></i> RMB/Day
+                </td>
+                <td>
+                    ¥ {{.price}}
+                </td>
+            </tr>
+            {{ with .discount }}
+                <tr>
+                    <td>
+                        <i class="fa fa-percent"></i>
+                        Discount
+                    </td>
+                    <td>
+                        {{.price}} <br/>
+                        Code: {{.code}}
+                    </td>
+                </tr>
+            {{ end }}
+            {{ with .contact }}
+                <tr>
+                    <td>
+                            <i class="fa fa-user"></i>
+                            Book with:
+                        </td>
+                        <td>
+                            酒店联系人：{{.name}}: <br/>
+                            <i class="fa fa-phone"></i>{{.phone}} <br/>
+                            <i class="fa fa-envelope"></i> <a href="mailto:{{.email}}">{{.email}}</a>
+                        </td>
+                    </td>
+                </tr>
+            {{ end }}
+            {{ if not (eq (add $index 1) (len $.Site.Data.hotels)) }}
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+            {{ end }}
+        {{ end }}
+        </tbody>
+    </table>
