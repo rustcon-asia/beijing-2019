@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{- $shortDesc := .Site.Params.description.brief | markdownify }}
 {{- $longDesc  := .Site.Params.description.long | markdownify }}
-{{- $location  := .Site.Params.location }}
+{{- $talk_location  := .Site.Params.locations.talks }}
+{{- $workshop_location  := .Site.Params.locations.workshops }}
 {{- $buttons   := .Site.Params.home.buttons }}
 {{- $logo      := .Site.Params.logos.color | relURL }}
 {{- $orga  := .Site.Data.organizers }}
@@ -42,12 +43,26 @@
 
       <br />
 
-      <p class="subtitle has-text-weight-bold is-size-3 is-size-4-tablet is-size-5-mobile">
-        {{ $location.name }}
-      </p>
-      <p class="has-text-grey subtitle is-size-3 is-size-4-tablet is-size-5-mobile">
-        {{ $location.address }}
-      </p>
+      <div class="columns">
+        <div class="is-half">
+            <p class="subtitle has-text-weight-bold is-size-3 is-size-4-tablet is-size-5-mobile">Talks:</h1>
+          <p class="subtitle has-text-weight-bold is-size-3 is-size-4-tablet is-size-5-mobile">
+            {{ $talk_location.Name }}
+          </p>
+          <p class="has-text-grey subtitle is-size-3 is-size-4-tablet is-size-5-mobile">
+            {{ $talk_location.Address }}
+          </p>
+        </div>
+        <div class="is-half">
+          <p class="subtitle has-text-weight-bold is-size-3 is-size-4-tablet is-size-5-mobile">Workshops:</h1>
+          <p class="subtitle has-text-weight-bold is-size-3 is-size-4-tablet is-size-5-mobile">
+            {{ $workshop_location.Name }}
+          </p>
+          <p class="has-text-grey subtitle is-size-3 is-size-4-tablet is-size-5-mobile">
+            {{ $workshop_location.Address }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

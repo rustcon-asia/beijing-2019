@@ -17,9 +17,14 @@ start = "20 April"
 end = "23 April"
 year = "2019"
 
-[params.location]
+[params.locations.talks]
 name = "Hyatt Regency Beijing Wangjing"
 address = "Lei Shing Hong Center, 8 Guangshun South Street, Chaoyang District, Beijing, China"
+
+[params.locations.workshops]
+name = "大望京科技商务园区浦项中心A座"
+address = "Tower A, POSCO Center, 13 Wangjing Science And Technology Business Park, Chaoyang District, Beijing"
+url = "http://www.poscocenter.cn/en/bbs/board.php?bo_table=m03_05&wr_id=1"
 
 [params.description]
 brief = "Beijing"

@@ -1,6 +1,9 @@
-# - name: Baidu X-Lab
-#   url: http://xlab.baidu.com/en/
-#   logo: img/logos/baidu.png
+- name: Qtum
+  url: https://qtum.org/
+  logo: img/logos/qtum.svg
 - name: Baidu X-Lab
   url: http://xlab.baidu.com/en/
   logo: img/logos/baidu.svg
+- name: SNZ
+  url: http://snzholding.com/
+  logo: img/logos/snz.svg

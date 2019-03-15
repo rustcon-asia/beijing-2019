@@ -44,8 +44,13 @@
     cn: 北京市朝阳区酒仙桥路13号
   distance: 3KM
   price: 560-820
-  discount: null
-  contact: null
+  discount:
+    code: RustCon Asia
+    price: -15%
+  contact:
+    name: Mr. Li
+    phone: +86 13522544264
+    email: 1278048086@qq.com
 - name:
     en: Qi Jian of All Season Hotel
     cn: 全季柒间酒店
@@ -66,7 +71,7 @@
   price: 600-750
   discount:
     code: RustCon Asia
-    price: 12%
+    price: -12%
   contact: 
     name: Kang (康经理)
     phone: +86 15690351817
