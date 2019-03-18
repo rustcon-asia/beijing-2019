@@ -108,21 +108,35 @@
     <div class="columns level">
       {{- range $orga }}
         <div class="column level">
-          <a href="{{ .url }}"><img class="image" src="{{ .logo }}" alt="{{ .name }}"></div></a>
+          <a href="{{ .url }}">
+            <img class="image" src="{{ .logo }}" alt="{{ .name }}">
+          </a>
+        </div>
       {{- end}}
     </div>
 
     <p class="title is-size-4 is-size-5-mobile">
       This event is sponsored by:
-     </p>
+    </p>
 
-    <div class="columns level">
-      {{- range $sponsors }}
-        <div class="column level">
-          <a href="{{ .url }}"><img class="image" src="{{ .logo }}" alt="{{ .name }}"></div></a>
+    <div class="container columns">
+      <div class="column is-half is-offset-one-quarter">
+      {{- range $level := .Site.Data.sponsor_levels }}
+        <div class="columns level">
+          {{- range $sponsors }}
+            {{- if eq .level $level }}
+              <div class="column level">
+                <a href="{{ .url }}">
+                  <img class="image" src="{{ .logo }}" alt="{{ .name }}">
+                </a>
+              </div>
+            {{- end}}
+          {{- end}}
+        </div>
       {{- end}}
+      </div>
     </div>
-    
+
     <p class="title is-size-4 is-size-5-mobile">
       <a href="mailto:ana@pingcap.com">Want to sponsor?</a>
     </p>
