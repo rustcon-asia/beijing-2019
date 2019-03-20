@@ -122,6 +122,9 @@
     <div class="container columns">
       <div class="column is-half is-offset-one-quarter">
       {{- range $level := .Site.Data.sponsor_levels }}
+        <p class="title is-size-4 is-size-5-mobile">
+          {{ $level }} Patrons
+        </p>
         <div class="columns level">
           {{- range $sponsors }}
             {{- if eq .level $level }}

@@ -1,12 +1,12 @@
 - name: Baidu X-Lab
-  url: http://xlab.baidu.com/en/
+  url: http://xlab.baidu.com/about/index.html
   logo: img/logos/baidu.svg
-  level: gold
+  level: Gold
 - name: Qtum
   url: https://qtum.org/
   logo: img/logos/qtum.svg
-  level: bronze
+  level: Bronze
 - name: SNZ
   url: http://snzholding.com/
   logo: img/logos/snz.svg
-  level: bronze
+  level: Bronze
