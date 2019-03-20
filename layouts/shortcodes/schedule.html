@@ -1,0 +1,37 @@
+<table class="table is-fullwitdh is-narrow">
+    <tbody>
+        {{ range $idx := .Site.Data.schedule }}
+            <tr>
+                <td colspan=4>
+                    <h1>Day {{ $idx.day }}</h1>
+                </td>
+            </tr>
+            {{ range $slot := $idx.items }}
+                {{- $talk := index $.Site.Data.talks $slot.title }}
+                <tr>
+                    <td>{{ $slot.start }}</td>
+                    <td>{{ $slot.end }}</td>
+                    <td>
+                        <h4>{{ $slot.title }}</h4>
+                    </td>
+                </tr>
+                {{ if $talk.abstract }}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="has-text-grey">
+                            <div class="has-text-centered" style="float: right; padding: 5px;">
+                                {{ if $talk.headshot }}
+                                    <img alt="{{ $talk.speaker }}" style="max-width: 150px; max-height: 150px;" src="/img/speakers/{{ $talk.headshot }}">
+                                {{ end }}
+                                <p class="has-text-weight-bold">{{ $talk.speaker }}</p>
+                            </div>
+                            {{ $talk.abstract | markdownify }}
+                        </td>
+                    </tr>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </tbody>
+</table>
+

@@ -55,8 +55,8 @@ text = "Tickets / 门票"
 link = "/tickets"
 
 [[params.home.buttons]]
-text = "Call for Proposals"
-link = "https://cfp.rustcon.asia/"
+text = "Schedule"
+link = "/schedule"
 
 [[params.home.buttons]]
 text = "Blog"

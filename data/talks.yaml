@@ -1,0 +1,191 @@
+"Making Rust Delightful":
+  speaker: Nick Cameron
+  headshot: nick.jpg
+  abstract: |
+    Rust strives to be an ergonomic language: easy to read, easy to write, and easy to maintain. We want it to be a language which delights! But what does that mean? How do the language and library designers decide what makes a feature ergonomic? And how do we consider the trade-offs between ergonomics and other design pressures such as safety and performance?
+
+    I'll cover Rust's design philosophy, some case studies on ergonomics from the language, libraries, and tools, and talk about how design decisions are made by the language team and others. I'll talk about issues such as 'explicit vs implicit', syntactic sugar, and consistency.
+
+"Linux From Scratch in Rust":
+  speaker: Mingshen Sun
+  headshot: mingshen.jpg
+  abstract: |
+    Rust's memory-safety and zero-abstraction makes it the best candidate for system programming. To provide a safe execution environment, we build a Linux distribution from scratch in Rust including a building system, user-space utilities, and a simple package management system. In this talk, we mainly focus on our user-space toolbox, which is a collection of core system utilities. We will discuss some design challenges and problems we encountered in building the toolbox, e.g., handling standard I/O, dynamic dispatching vs static generic type, testing and coverage issues, etc.
+
+"Implementing a secp256k1 library in pure Rust":
+  speaker: Wei Tang
+  headshot: wei.jpg
+  abstract: |
+    This talk discusses my experience in implementing libsecp256k1, a pure Rust library that provides full secp256k1 signing and verification functionality, and runs in no_std environments.
+
+"How Rust taught me to think about systems":
+  speaker: Ravi Shankar
+  headshot: ravi.jpg
+  abstract: |
+    All Rustaceans know that Rust's borrow checker is merciless to newcomers. This talk covers the pain points encountered by me, back when I was a newcomer to Rust (and systems, in general). We'll see a variety of situations which are totally normal in a number of high-level languages but not in Rust, how the same code differed in Rust, how the errors made sense after a while, and how that changed me to think about approaching problems from there on. If you're looking for motivation to get into Rust, or if it made you angry or scared you away at some point, then this talk is for you!
+
+"Futures in TiKV":
+  speaker: Qu Peng
+  headshot:
+  abstract: |
+    TiKV is a high performance distributed K-V storage engine. Many components like readpool, coprocessor are based on futures. And some other components like threaded raftstore are designed in task-executor style, which is inspired by futures-rs. In this short talk I want to share with you how TiKV uses futures and then implements a similar system.
+
+"Implementing a p2p network framework":
+  speaker: driftluo
+  headshot: driftluo.jpg
+  abstract: |
+    Library: https://github.com/driftluo/p2p
+
+    I will probably talk about the development of this library, the problems encountered, and so on, and explain the implementation of each small library.
+
+    This library is a small supplement to the Rust network ecosystem. I hope that more people will participate in the Rust ecosystem. Such a good language should have a better ecological support.
+
+"Stackful coroutine based rust async story":
+  speaker: Xudong Huang
+  headshot: xudong.jpg
+  abstract: |
+    While the official future based asynchronous system is under way of building and maturing, I'd like to talk about another asynchronous story that based on stackful generators and coroutines.
+
+    I'm the author of May(https://github.com/Xudong-Huang/may). I could talk the designs and implementations of it, give some fundamental concept about generator and coroutine, the overall structure of coroutine scheduling, the sub IO system, the sub sync preemptive system, the cancellation mechanism, and and compare it with current future based systems
+
+"Cargo meets Autotools":
+  speaker: Yiming Jing
+  headshot: yiming.jpg
+  abstract: |
+    Since 1.10, rustc can generate a dynamic library that is intended to be used from C or C FFI, as long as the cdylib crate type is specified in Cargo.toml. While the cargo install command makes it a breeze to distribute executables (e.g. ripgrep), it does NOT work with cdylib dynamic libraries.
+
+    Back in 2018 we had struggled a long way to get a working build infrastructure, just to build and distribute our dynamic library written in Rust. Eventually, we made autotools work happily together with the rust toolchain. Now a user can just download our source tarball, uncompress, and run ./configure && make && make install, just like old times. In this talk we'd like to share our story and hopefully this will be useful for the community.
+
+"How to write a custom derive":
+  speaker: Xidorn Quan
+  headshot: xidorn.jpg
+  abstract: |
+    Custom derive code can be challenging to read and write for developers who are not familiar with it, however it is a very powerful tool which may empower people to write less code while have more things done. It has been widely used in Servo's style system. This talk will take a brief look at how custom derive is used in Servo's style system, and describe how a custom derive can be developed from scratch.
+
+"Distributed Actor System in Rust":
+  speaker: Zimon Dai
+  headshot: zimon.jpg
+  abstract: |
+    We designed out distributed actor system in Rust. This kind of system involves many problems as Rust is strong-typed with neither a VM nor reflection. This lecture shares our approach to create such a system. Also shares how to erase type information to do networking and recover the type for messaging in Rust. And other unique design patterns including how to dynamically create new actor types and inject into the system (using proc macros).
+
+"Be Fearless Using Rust in Production":
+  speaker: RobotXY
+  headshot: xianyou.jpg
+  abstract: |
+    We need a high performance and stability image rendering web server to handle creative real-time generation for Taobao Wireless focus picture.
+
+    The service requires algorithms to select products, copywriting and creative templates according to different users, and then generate creative to be displayed in real-time. At the beginning of our development with Node, but unable to meet performance requirements soon.
+
+    Our team replace Node version server with Rust version since 2016, and got greatly increase of RT and QPS. This server is running over two years, and have stood the test of two "Double 11".
+
+    This topic will share our experience on how we use Rust in production.
+
+"Rust at Bilibili":
+  speaker: WaySLOG
+  headshot:
+  abstract: |
+    Bilibili is an online video barrage website. We are happy to try new technology, and Rust is also the language I am optimistic about. Today we will introduce to you three of our components that use Rust:
+
+    * Caching proxy component
+    * Image processing component
+    * Compile the remote cache component
+
+    I would like to introduce you to some of the problems we encountered when using Rust and a little experience, I hope to help everyone.
+
+"How to learn Rust efficiently":
+  speaker: Alex
+  headshot:
+  abstract: |
+    What is the real reason for the "Rust learning curve is high"?
+    
+    * What is efficient learning?
+    * What are the common pitfalls in learning Rust?
+    * Learn from Rust's ten recommendations.
+
+"Search Engine in production with Rust":
+  speaker: Xiaoguang Sun
+  headshot: sun.jpg
+  abstract: |
+    This talk will review the design choices and the lessons we learned while we develop a real-world Search Engine with Rust. The audiences could potentially avoid similar mistakes we made and are more willing to use Rust in production.
+
+"Introduction to IoT using Blynk, Rust and your Smartphone":
+  speaker: Rahul Thakoor
+  headshot: rahul.jpg
+  abstract: |
+    Do you want to leverage your smartphone's sensors and actuators? Do you want to learn the basics of IoT, and bridge the virtual and physical world? And do you want to do it all using Rust?!
+
+    In this workshop, you can get a taste of the embedded world without breaking the bank. We are going to use Blynk, which is a free smartphone app providing drag-and-drop widgets for your IoT projects. You will need a smartphone (iOS or Android) and a laptop running Linux, macOS or Windows.
+
+    We will introduce the basics of IoT. You will configure virtual LEDs and buttons, collect sensor data like GPS stream or Accelerometer or send events and data to your phone. By the end, you will be able to use your skills learned prototyping to make more creative and fun projects and blaze your own trail. You will also get a better understanding of IoT projects and be inspired to get started with embedded Rust on microcontrollers or other hardware.
+
+"RustBridge":
+  speaker: Olivia Hugger
+  headshot: olivia.jpg
+  abstract: |
+    RustBridge is an all-day workshop focused on getting underrepresented people with a background in another programming language to learn Rust and join the community. In this workshop we’ll get you up and running with a Rust development environment, introduce you to Rust syntax and programming concepts, and work together to build a small website that you can personalize, extend, and share!
+
+"WebAssembly with wasm-bindgen":
+  speaker: Ilya Baryshnikov
+  headshot: ilya.jpg
+  abstract: |
+    Advanced details about Rust and WebAssembly.
+
+    We will discuss two major topics: moving computations to wasm and DOM manipulations.
+
+    At this workshop you will learn:
+    
+    - how to compile Rust to wasm using rustc
+    - why communications between Rust and JS could be hard
+    - how wasm-bindgen simplifies development
+    - how to build module with wasm-pack
+    - how to use wasm from various environments: webpack, node.js, plain html (without bundlers)
+    - any additional topics, suggested by attendees
+
+    After this workshop you will be ready to start using Rust in your web app.
+    If you already familiar with Rust and wasm-bindgen, we can still try to discuss more advanced problems and how to deal with pain points.
+
+"Rapid Development of RESTful microservices using actix-web and diesel":
+  speaker: Alex
+  headshot:
+  abstract: |
+    Taking the TodoList as an example, we will use Actix-web and Diesel to implement a microservice interface service.
+
+    * Introduction to Actix/Actix-web and Diesel.
+    * How to organize the code using Actix-web.
+    * Preliminary practice.
+    * How to use abstract tool code refactoring such as generics, traits, etc. And how to use macros to Don't Repeat Yourself.
+    * How to package the service into a 10M Docker image for deployment.
+
+"Build a Secure and Trusted Framework in Rust":
+  speaker: Yu Ding & Mingshen Sun
+  headshot: mingshen.jpg
+  abstract: |
+    This talk intends to be a long talk (~4 hrs) introducing the Rust TEE ecosystem.
+
+    [Rust SGX SDK](https://github.com/baidu/rust-sgx-sdk) has become the most popular SGX development environment. Previous talks at [RustFest](https://paris.rustfest.eu/sessions/mesalock-sgx), [QConSF](https://qconsf.com/sf2017/sf2017/presentation/towards-memory-safety-intel-sgx-enclave.html) and [QConBJ](https://2018.qconbeijing.com/presentation/399) are all brief talks within 30 minutes and limited Q&As. This time I'd like to present its details and current ecosystems. In addition, we'll include the Rust-trustzone part.
+
+    The talk would guide the audience to play Rust on two TEEs: SGX and Trustzone. In the beginning, we'll talk about the trusted computing theory and hardware-assisted trust execution engines. Then we assist the audience with hands-on experiments on Rust+SGX and Rust+Trustzone platforms. At last, we'll discuss about the internals and ecosystems.
+
+"Thinking In Rust":
+  speaker: Nick Cameron
+  headshot: nick.jpg
+  abstract: |    
+    Learning a new programming language is hard. Even after mastering the syntax and type system, learning the libraries and techniques can take years. If you've read or written Rust and want to improve, this talk will give you a turbo boost! This will be a very practical tutorial, aimed at taking your Rust programming to the next level. We'll teach some core Rust design principles by covering a few key topics in depth.
+
+    The tutorial will start with programming 'in the small': we'll explore some key library types (Option, Result, and Iterator) and cover practical error handling. Putting these together we'll see how to structure your control flow to write clear, succinct programs. We'll then cover some larger-scale design issues - using ownership
+    as a primary architectural principle, and abstraction using traits.
+
+    You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it.
+
+"Building a blockchain using Rust with Parity Substrate":
+  speaker: Gautam Dhameja
+  headshot: gautam.jpg
+  abstract: |
+    Rust + Blockchain: What can be more cutting edge than that combo? In this workshop learn to build your own blockchain using Rust with the Parity Substrate framework. The workshop helps Rust developers in getting started on the Substrate framework. Substrate allows you to build custom, highly efficient and modular blockchains using the Rust programming language.
+
+    The workshop includes the following:
+
+    *  Introduction to the Substrate framework
+    *  Getting started with blockchain development using Substrate
+    *  Building a sample Substrate runtime
+
