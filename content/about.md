@@ -18,7 +18,7 @@ Asia has a long history of Rust use...
 
 * [PingCAP](http://pingcap.com/), based in Beijing, was one of the first production users of Rust in the (now CNCF) project [TiKV](http://tikv.org/).
 * [Cryptape](https://www.cryptape.com/#/) is using Rust to build next trust layers in [Nervos](http://nervos.org/).
-* Baidu X-Lab is using Rust to build a more secure Linux with their [MesaLock](https://github.com/mesalock-linux/) project.
+* [Baidu X-Lab](http://xlab.baidu.com/about/index.html) is building a memory-safe trustworthy computing framework in the [MesaTEE](https://mesatee.org/) software stack.
 
 > Are you using Rust in production in Asia? Please tell us so we can highlight you!
 

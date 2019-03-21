@@ -123,7 +123,9 @@
     <div class="container columns">
       <div class="column is-half is-offset-one-quarter">
       {{- range $level := .Site.Data.supporter_levels }}
-        <h1 class="is-size-4">{{ $level }}</h1>  
+        <p class="is-size-4 is-size-5-mobile">
+          {{ $level }}
+        </p>  
         <div class="columns level">
           {{- range $supporters }}
             {{- if eq .level $level }}
