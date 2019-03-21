@@ -10,7 +10,6 @@
 {{- $baiduLogo  := .Site.Params.logos.baidu | relURL }}
 {{- $cryptapeLogo  := .Site.Params.logos.cryptape | relURL }}
 {{- $features  := .Site.Data.features }}
-{{- $committee  := .Site.Data.committee }}
 <section class="hero is-medium is-light">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -140,27 +139,6 @@
     <p class="title is-size-4 is-size-5-mobile">
       <a href="mailto:ana@pingcap.com">Want to sponsor?</a>
     </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <p class="title is-size-4 is-size-5-mobile">
-      Technical program committee
-    </p>
-
-    <div class="columns level">
-      {{- range $committee }}
-        <div class="column level">
-          <a href="{{ .url }}">
-            <figure>
-              <img class="image" src="{{ .logo }}" alt="{{ .name }}">
-              <figcaption>{{ .name }}</figcaption>
-            </figure>
-          </a>
-        </div>
-      {{- end}}
-    </div>
   </div>
 </section>
 {{ end }}

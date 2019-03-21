@@ -21,10 +21,12 @@
                         <td></td>
                         <td class="has-text-grey">
                             <div class="has-text-centered is-pulled-right" style="padding: 5px;">
-                                {{ if $talk.headshot }}
-                                    <img alt="{{ $talk.speaker }}" style="max-width: 150px; max-height: 150px;" src="/img/speakers/{{ $talk.headshot }}">
-                                {{ end }}
-                                <p class="has-text-weight-bold">{{ $talk.speaker }}</p>
+                                <figure>
+                                    {{ if $talk.headshot }}
+                                        <img alt="{{ $talk.speaker }}" class="image" style="max-width: 150px; max-height: 150px;" src="/img/speakers/{{ $talk.headshot }}">
+                                    {{ end }}
+                                    <figcaption class="has-text-weight-bold">{{ $talk.speaker }}</figcaption>
+                                </figure>
                             </div>
                             {{ $talk.abstract | markdownify }}
                         </td>
@@ -35,3 +37,25 @@
     </tbody>
 </table>
 
+
+{{- $committee  := .Site.Data.committee }}
+<section class="section">
+    <div class="container has-text-centered">
+        <p class="title is-size-4 is-size-5-mobile">
+        Technical program committee
+        </p>
+
+        <div class="columns level">
+        {{- range $committee }}
+            <div class="column level">
+                <a href="{{ .url }}">
+                    <figure>
+                        <img class="image" src="/{{ .logo }}" alt="{{ .name }}">
+                        <figcaption>{{ .name }}</figcaption>
+                    </figure>
+                </a>
+            </div>
+        {{- end}}
+        </div>
+    </div>
+</section>
