@@ -158,7 +158,9 @@
 
 "Build a Secure and Trusted Framework in Rust":
   speaker: Yu Ding & Mingshen Sun
-  headshot: mingshen.jpg
+  headshots:
+  - mingshen.jpg
+  - yuding.jpg
   abstract: |
     This talk intends to be a long talk (~4 hrs) introducing the Rust TEE ecosystem.
 
