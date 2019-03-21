@@ -6,7 +6,7 @@
 {{- $buttons   := .Site.Params.home.buttons }}
 {{- $logo      := .Site.Params.logos.color | relURL }}
 {{- $orga  := .Site.Data.organizers }}
-{{- $sponsors  := .Site.Data.sponsors }}
+{{- $supporters  := .Site.Data.supporters }}
 {{- $co_organizers := .Site.Data.co_organizers }}
 {{- $baiduLogo  := .Site.Params.logos.baidu | relURL }}
 {{- $cryptapeLogo  := .Site.Params.logos.cryptape | relURL }}
@@ -122,9 +122,10 @@
 
     <div class="container columns">
       <div class="column is-half is-offset-one-quarter">
-      {{- range $level := .Site.Data.sponsor_levels }}
+      {{- range $level := .Site.Data.supporter_levels }}
+        <h1 class="is-size-4">{{ $level }}</h1>  
         <div class="columns level">
-          {{- range $sponsors }}
+          {{- range $supporters }}
             {{- if eq .level $level }}
               <div class="column level">
                 <a href="{{ .url }}">
@@ -135,24 +136,6 @@
           {{- end}}
         </div>
       {{- end}}
-      </div>
-    </div>
-
-    <p class="title is-size-4 is-size-5-mobile">
-      Co-organizers
-    </p>
-
-    <div class="container columns">
-      <div class="column is-half is-offset-one-quarter">
-        <div class="columns co-organizers">
-          {{- range $co_organizers }}
-            <div class="column co-organizer">
-              <a href="{{ .url }}">
-                <img class="image" src="{{ .logo }}" alt="{{ .name }}">
-              </a>
-            </div>
-          {{- end}}
-        </div>
       </div>
     </div>
 
