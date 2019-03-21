@@ -1,7 +1,7 @@
 {{- $year      := now.Year }}
 {{- $logo      := .Site.Params.logos.white | relURL }}
 {{- $orga      := .Site.Data.organizers }}
-{{- $sponsors      := .Site.Data.sponsors }}
+{{- $supporters      := .Site.Data.supporters }}
 {{- $latest    := .Site.Params.versions.latest }}
 {{- $blogPosts := where .Site.RegularPages "Section" "blog" }}
 <footer class="footer is-dark">
@@ -31,13 +31,13 @@
 
     <div class="column">
       <h5 class="is-size-5 has-text-weight-bold has-text-white">
-        Sponsors
+        Supporters
       </h4>
 
       <hr class="hr has-background-primary">
 
       <ul>
-        {{- range $sponsors }}
+        {{- range $supporters }}
         <li>
           <a href="{{ .url }}">
             {{ .name }}

@@ -6,7 +6,8 @@
 {{- $buttons   := .Site.Params.home.buttons }}
 {{- $logo      := .Site.Params.logos.color | relURL }}
 {{- $orga  := .Site.Data.organizers }}
-{{- $sponsors  := .Site.Data.sponsors }}
+{{- $supporters  := .Site.Data.supporters }}
+{{- $co_organizers := .Site.Data.co_organizers }}
 {{- $baiduLogo  := .Site.Params.logos.baidu | relURL }}
 {{- $cryptapeLogo  := .Site.Params.logos.cryptape | relURL }}
 {{- $features  := .Site.Data.features }}
@@ -120,9 +121,12 @@
 
     <div class="container columns">
       <div class="column is-half is-offset-one-quarter">
-      {{- range $level := .Site.Data.sponsor_levels }}
+      {{- range $level := .Site.Data.supporter_levels }}
+        <p class="is-size-4 is-size-5-mobile">
+          {{ $level }}
+        </p>  
         <div class="columns level">
-          {{- range $sponsors }}
+          {{- range $supporters }}
             {{- if eq .level $level }}
               <div class="column level">
                 <a href="{{ .url }}">
