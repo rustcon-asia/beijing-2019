@@ -26,7 +26,7 @@
 
 "Futures in TiKV":
   speaker: Qu Peng
-  headshot:
+  headshot: qupeng.jpg
   abstract: |
     TiKV is a high performance distributed K-V storage engine. Many components like readpool, coprocessor are based on futures. And some other components like threaded raftstore are designed in task-executor style, which is inspired by futures-rs. In this short talk I want to share with you how TiKV uses futures and then implements a similar system.
 
