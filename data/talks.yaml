@@ -96,7 +96,7 @@
 
 "How to learn Rust efficiently":
   speaker: Alex
-  headshot:
+  headshot: alex.jpg
   abstract: |
     What is the real reason for the "Rust learning curve is high"?
     
@@ -148,7 +148,7 @@
 
 "Rapid Development of RESTful microservices using actix-web and diesel":
   speaker: Alex
-  headshot:
+  headshot: alex.jpg
   abstract: |
     Taking the TodoList as an example, we will use Actix-web and Diesel to implement a microservice interface service.
 
