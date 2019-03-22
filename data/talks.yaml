@@ -81,8 +81,10 @@
     This topic will share our experience on how we use Rust in production.
 
 "Rust at Bilibili":
-  speaker: WaySLOG
+  speaker: WaySLOG & hawkingrei
   headshot:
+  - wayslog.jpg
+  - wangweizhen.jpg
   abstract: |
     Bilibili is an online video barrage website. We are happy to try new technology, and Rust is also the language I am optimistic about. Today we will introduce to you three of our components that use Rust:
 
