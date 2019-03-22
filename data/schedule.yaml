@@ -1,0 +1,132 @@
+# This file is ordered! Please be careful.
+
+- day: 1
+  date: April 20
+  title: Rust in Depth
+  items:
+  - title: Check In
+    start: 08:00
+  - title: Opening
+    speaker: Organizers
+    start: 8:30
+    end: 9:30
+  - title: Making Rust Delightful
+    start: 09:35
+    end: 10:05
+  - title: Linux From Scratch in Rust
+    start: 10:10
+    end: 10:40
+  - title: Break
+    start: 14:40
+    end: 14:55
+  - title: Unconfirmed Talk
+    start: 10:55
+    end: 11:10
+  - title: Implementing a secp256k1 library in pure Rust
+    start: 11:15
+    end: 11:30
+  - title: How Rust taught me to think about systems
+    start: 11:35
+    end: 12:05
+  - title: Futures in TiKV
+    start: 13:00
+    end: 13:30
+  - title: Implementing a p2p network framework
+    start: 13:35
+    end: 14:05
+  - title: Stackful coroutine based rust async story
+    start: 14:10
+    end: 14:40
+  - title: Break
+    start: 14:40
+    end: 14:55
+  - title: Unconfirmed Talk
+    start: 14:55
+    end: 15:25
+  - title: Cargo meets Autotools
+    start: 15:30
+    end: 16:00
+  - title: How to write a custom derive
+    start: 16:05
+    end: 16:35
+  - title: Distributed Actor System in Rust
+    start: 16:40
+    end: 17:10
+  - title: Networking
+    start: 17:10
+- day: 2
+  date: April 21
+  title: Rust in Production
+  items:
+  - title: Check In
+    start: 08:30
+  - title: Be Fearless Using Rust in Production
+    start: 08:40
+    end: 09:10
+  - title: Rust at Bilibili
+    start: 09:15
+    end: 09:45
+  - title: How to learn Rust efficiently
+    start: 09:50
+    end: 10:05
+  - title: Break
+    start: 10:05
+    end: 10:20
+  - title: Search Engine in production with Rust
+    start: 10:20
+    end: 10:50
+  - title: Closing Project Update
+    start: 10:55
+    end: 11:25
+  - title: Networking
+    start: 11:35
+- day: 3
+  date: April 22
+  items:
+  - title: Introduction to IoT using Blynk, Rust and your Smartphone
+    room: 1
+    start: 09:00
+    end: 12:00
+  - title: Unconfirmed Workshop
+    room: 2
+    start: 09:00
+    end: 12:00
+  - title: RustBridge
+    room: 3
+    start: 10:00
+    end: 18:00
+  - title: WebAssembly with wasm-bindgen
+    room: 1
+    start: 13:00
+    end: 17:00
+  - title: Rapid Development of RESTful microservices using actix-web and diesel
+    room: 2
+    start: 13:00
+    end: 17:00
+- day: 4
+  date: April 23
+  items:
+  - title: Build a Secure and Trusted Framework in Rust
+    room: 1
+    start: 09:00
+    end: 12:00
+  - title: Thinking In Rust
+    room: 2
+    start: 09:00
+    end: 12:00
+  - title: Unconfirmed
+    room: 3
+    start: 09:00
+    end: 12:00
+  - title: Unconfirmed
+    room: 1
+    start: 13:00
+    end: 17:00
+  - title: Unconfirmed
+    room: 2
+    start: 13:00
+    end: 17:00
+  - title: Building a blockchain using Rust with Parity Substrate
+    room: 3
+    start: 13:00
+    end: 17:00
