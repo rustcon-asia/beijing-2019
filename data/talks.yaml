@@ -81,8 +81,10 @@
     This topic will share our experience on how we use Rust in production.
 
 "Rust at Bilibili":
-  speaker: WaySLOG
-  headshot:
+  speaker: WaySLOG & hawkingrei
+  headshots:
+  - wayslog.jpg
+  - wangweizhen.jpg
   abstract: |
     Bilibili is an online video barrage website. We are happy to try new technology, and Rust is also the language I am optimistic about. Today we will introduce to you three of our components that use Rust:
 
@@ -94,7 +96,7 @@
 
 "How to learn Rust efficiently":
   speaker: Alex
-  headshot:
+  headshot: alex.jpg
   abstract: |
     What is the real reason for the "Rust learning curve is high"?
     
@@ -146,7 +148,7 @@
 
 "Rapid Development of RESTful microservices using actix-web and diesel":
   speaker: Alex
-  headshot:
+  headshot: alex.jpg
   abstract: |
     Taking the TodoList as an example, we will use Actix-web and Diesel to implement a microservice interface service.
 
