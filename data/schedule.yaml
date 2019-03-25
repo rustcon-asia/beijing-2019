@@ -19,7 +19,7 @@
   - title: Break
     start: 10:40
     end: 10:55
-  - title: Unconfirmed Talk
+  - title: Rust for competitive programming
     start: 10:55
     end: 11:10
   - title: Implementing a secp256k1 library in pure Rust
