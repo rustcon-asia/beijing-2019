@@ -46,7 +46,7 @@
   - title: Cargo meets Autotools
     start: 15:30
     end: 16:00
-  - title: How to write a custom derive
+  - title: Re:Zero - writing a custom derive
     start: 16:05
     end: 16:35
   - title: Distributed Actor System in Rust

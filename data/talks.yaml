@@ -56,7 +56,7 @@
 
     Back in 2018 we had struggled a long way to get a working build infrastructure, just to build and distribute our dynamic library written in Rust. Eventually, we made autotools work happily together with the rust toolchain. Now a user can just download our source tarball, uncompress, and run ./configure && make && make install, just like old times. In this talk we'd like to share our story and hopefully this will be useful for the community.
 
-"How to write a custom derive":
+"Re:Zero - writing a custom derive":
   speaker: Xidorn Quan
   headshot: xidorn.jpg
   abstract: |
