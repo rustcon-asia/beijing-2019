@@ -54,6 +54,19 @@
 
     I'm the author of May(https://github.com/Xudong-Huang/may). I could talk the designs and implementations of it, give some fundamental concept about generator and coroutine, the overall structure of coroutine scheduling, the sub IO system, the sub sync preemptive system, the cancellation mechanism, and and compare it with current future based systems
 
+"Improving web app with Rust and WASM":
+  speaker: Ilya Baryshnikov
+  headshot: ilya.jpg
+  abstract: |
+    WebAssembly is a new standard which can be used to speed up heavy computations in the browser.
+    But what is a "heavy computation"? How it may affect your users and your business?
+    I will show several examples of heavy computations in React + three.js app.
+    We will compare performance of JS and Rust.
+    Then I will share our story of introducing Rust and WebAssembly to the app.
+    How to write the code, how to build and publish npm module, and how to finally load it with webpack.
+    We will discuss how wasm-bindgen library can help you to communicate with the JS world and reduce the boilerplate.
+    In the end we'll talk about quality control tools and tests.
+
 "Cargo meets Autotools":
   speaker: Yiming Jing
   headshot: yiming.jpg

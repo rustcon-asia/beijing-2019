@@ -40,7 +40,7 @@
   - title: Break
     start: 14:40
     end: 14:55
-  - title: Unconfirmed Talk
+  - title: Improving web app with Rust and WASM
     start: 14:55
     end: 15:25
   - title: Cargo meets Autotools
