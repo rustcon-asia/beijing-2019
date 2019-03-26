@@ -126,6 +126,22 @@
 
     We will introduce the basics of IoT. You will configure virtual LEDs and buttons, collect sensor data like GPS stream or Accelerometer or send events and data to your phone. By the end, you will be able to use your skills learned prototyping to make more creative and fun projects and blaze your own trail. You will also get a better understanding of IoT projects and be inspired to get started with embedded Rust on microcontrollers or other hardware.
 
+"Rust at Cryptape":
+  speaker: Zhiwei Ning
+  headshot: zhiwei.jpg
+  abstract: |
+    At this workshop you will learn:
+    
+    - How Clippy works
+    - How to contribute to Clippy
+    - Two useful tools inspired by Clippy
+    - Relationship between Blockchain fork and Expression Problem
+    - How to slove Expression Problem in Rust
+
+    All level are welcomed!
+
+    If you familiar with Blockchain, we can discuss more about it after above contents.
+
 "RustBridge":
   speaker: Olivia Hugger
   headshot: olivia.jpg
