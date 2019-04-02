@@ -14,7 +14,7 @@
 
 "Rust for competitive programming":
   speaker: bhueztez
-  headshot:
+  headshot: bhueztez.png
   abstract: |
     Competitive programming requires you to solve problems efficiently and correctly in a very short time. Since there is not a single library that designed for competitive programming, contenders often have to implement non-trivial data-structures and algorithms from scratch which tedious and error-prone. This talk is about why Rust is a good fit for making libraries for competitive programming and how.
 
