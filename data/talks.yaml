@@ -200,6 +200,44 @@
 
     You'll learn how to be more productive in Rust by writing clean and idiomatic code. You'll learn to work with the language rather than fighting against it.
 
+"Learning Rust FFI":
+  speaker: hawkingrei
+  headshot: wangweizhen.jpg
+  abstract: |
+    This workshop teaches developers about compiling rust FFI - from a beginner to a master. This course can help you to bindgen any C/C++ library, and package C/C++ to a certain extent.
+
+    * learn about bindgen,build.rs, initially work with libwebp ffi
+    * implement libwebp wrapper, and turn png into libwebp
+    * implement in-library libwebp version, refer libwebp without libwebp
+    
+    This course requires you to have some basic knowledge about Rust language(no knowledge base is also okay), no requirement for c/c++. In this course, you can use Linux/Mac OS in order to do some experiment, for those using Windows you should set a virtual machine first.
+
+"Building a simple RESP parser":
+  speaker: WaySLOG
+  headshot: wayslog.jpg
+  abstract: |
+    This workshop opens to those developers who are experienced in Rust, especially for those who were once a beginner, then gave up and finally became a beginner again!
+
+    We will focus on redis' RESP protocol, and work together to optimize this parser
+
+    * walking through the definition of redis RESP protocol(https://redis.io/topics/protocol)
+    * implement simple parser with single pass backtracking
+    * use simd to accelerate specific environment of parser
+    * use tools like cargo flamegraph/dtrace/perf to generate flame graph, also to generate diff flame graph
+
+"Integrate rust-prometheus into your application":
+  speaker: Wish (施闻轩) & Shirly (吴雪莲)
+  headshots:
+    - wish.jpg
+    - shirly.jpg
+  abstract: |
+    Knowing what is happening and what was happened to your application is usually very difficult without any monitoring facilities. This workshop will teach you how to use rust-prometheus to continuously collect metrics for your application, using a simple web server written in Rust as an example. It includes
+    
+    1. Introduction to the Prometheus and the rust-prometheus client
+    2. Using rust-prometheus to collect different kind of metrics
+    3. Exposing collected metrics to Prometheus and using Grafana to visualize
+    4. The performance impact of the metrics and different ways to greatly improve performance
+
 "Building a blockchain using Rust with Parity Substrate":
   speaker: Gautam Dhameja
   headshot: gautam.jpg

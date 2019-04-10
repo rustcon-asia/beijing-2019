@@ -114,11 +114,15 @@
     room: 2
     start: 09:00
     end: 12:00
-  - title: Unconfirmed
+  - title: Learning Rust FFI
     room: 3
     start: 09:00
+    end: 10:30
+  - title: Building a simple RESP parser
+    room: 3
+    start: 10:30
     end: 12:00
-  - title: Unconfirmed
+  - title: Integrate rust-prometheus into your application
     room: 1
     start: 13:00
     end: 17:00
