@@ -13,8 +13,8 @@
     Rust's memory-safety and zero-abstraction makes it the best candidate for system programming. To provide a safe execution environment, we build a Linux distribution from scratch in Rust including a building system, user-space utilities, and a simple package management system. In this talk, we mainly focus on our user-space toolbox, which is a collection of core system utilities. We will discuss some design challenges and problems we encountered in building the toolbox, e.g., handling standard I/O, dynamic dispatching vs static generic type, testing and coverage issues, etc.
 
 "Rust for competitive programming":
-  speaker: bhueztez
-  headshot:
+  speaker: bhuztez
+  headshot: bhueztez.png
   abstract: |
     Competitive programming requires you to solve problems efficiently and correctly in a very short time. Since there is not a single library that designed for competitive programming, contenders often have to implement non-trivial data-structures and algorithms from scratch which tedious and error-prone. This talk is about why Rust is a good fit for making libraries for competitive programming and how.
 
@@ -138,6 +138,22 @@
     In this workshop, you can get a taste of the embedded world without breaking the bank. We are going to use Blynk, which is a free smartphone app providing drag-and-drop widgets for your IoT projects. You will need a smartphone (iOS or Android) and a laptop running Linux, macOS or Windows.
 
     We will introduce the basics of IoT. You will configure virtual LEDs and buttons, collect sensor data like GPS stream or Accelerometer or send events and data to your phone. By the end, you will be able to use your skills learned prototyping to make more creative and fun projects and blaze your own trail. You will also get a better understanding of IoT projects and be inspired to get started with embedded Rust on microcontrollers or other hardware.
+
+"Rust at Cryptape":
+  speaker: Zhiwei Ning
+  headshot: zhiwei.jpg
+  abstract: |
+    At this workshop you will learn:
+    
+    - How Clippy works
+    - How to contribute to Clippy
+    - Two useful tools inspired by Clippy
+    - Relationship between Blockchain fork and Expression Problem
+    - How to slove Expression Problem in Rust
+
+    All level are welcomed!
+
+    If you familiar with Blockchain, we can discuss more about it after above contents.
 
 "RustBridge":
   speaker: Olivia Hugger
