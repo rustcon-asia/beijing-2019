@@ -6,22 +6,22 @@
   items:
   - title: Check In
     start: 08:00
-  - title: Opening
-    Hosts: Ana, Zhiwei
-    start: 9:00
-    end: 9:05
-  - title: Opening talk: Rust in PingCAP
+  - title: Opening & Welcome
+    speaker: Ana & Zhiwei
+    start: 8:50
+    end: 9:00
+  - title: "Opening talk: Rust in PingCAP"
     speaker: Tang Liu
-    start: 9:05
-    end: 9:15
-  - title: Opening talk: Why RustCon Asia
+    start: 9:00
+    end: 9:10
+  - title: "Opening talk: Why RustCon Asia"
     speaker: Daniel
-    start: 9:15
-    end: 9:25
-  - title: Opening talk from Baidu X-Lab
+    start: 9:10
+    end: 9:20
+  - title: "Opening talk: Rust in Baidu X-Lab"
     speaker: 
-    start: 9:25
-    end: 9:35
+    start: 9:20
+    end: 9:30
   - title: Making Rust Delightful
     start: 09:35
     end: 10:05
