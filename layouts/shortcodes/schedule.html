@@ -3,7 +3,7 @@
         {{ range $idx := .Site.Data.schedule }}
             <tr>
                 <td colspan=4>
-                    <h1>Day {{ $idx.day }}</h1>
+                    <h1>Day {{ $idx.day }}: {{ $idx.date }}</h1>
                 </td>
             </tr>
             {{ range $slot := $idx.items }}
