@@ -6,7 +6,7 @@ pygmentsUseClasses = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-favicon = "favicon.png"
+favicon = ""
 googleAnalyticsId = "TODO"
 chinese_tickets = "http://www.huodongxing.com/event/6479456003900"
 english_tickets = "https://ti.to/cryptape/rustcon-asia"

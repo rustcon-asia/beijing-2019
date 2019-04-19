@@ -266,3 +266,22 @@
     *  Getting started with blockchain development using Substrate
     *  Building a sample Substrate runtime
 
+"Build a Decentralized app on Blockstack Chain V2":
+  speaker: Louise Ivan
+  headshot: louise.jpg
+  abstract: |
+    Blockstack is a full-stack decentralized computing network that enables a new generation of applications where developers and users can interact fairly and securely while curing the ills of centralized Internet design. Blockstack builds protocols and developer tools designed to enable a fair and open Internet that returns digital rights to developers and consumers. Led by some of the world’s foremost experts on distributed systems, Blockstack allows users to own their own data that they can take with them from app to app in the ecosystem, along with their Blockstack ID that eliminates the need for password-based logins. The end result is privacy, security, and freedom.
+
+    Stacks blockchain v2 is planned for late 2019 and will introduce two big changes/features.
+
+    * A new consensus algorithm
+    * A full smart contract system
+
+    The proposed consensus system aims to combine the best of classic distributed systems consensus algorithms and proof-of-work. The aim is an open membership system (unlike classic distributed consensus algorithms) but wants better scalability and throughput than proof-of-work blockchains like Bitcoin.
+
+    Stacks blockchain v2 is being written in Rust. You can follow the development here. The new consensus algorithm and the new smart contract system are proposed as Stacks Improvement Proposals (SIPs) and can be found as SIP-001 38 and SIP-002 27.
+
+    This workshop includes the following:
+    * Setup Blockstack Chain V2 with Rust
+    * Build a Decentralized app 
+    * Run your Dapp
