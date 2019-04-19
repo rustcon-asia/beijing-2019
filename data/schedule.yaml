@@ -96,53 +96,53 @@
   date: April 22
   items:
   - title: Introduction to IoT using Blynk, Rust and your Smartphone
-    room: 1
+    room: A
     start: 09:00
     end: 12:00
   - title: Rust at Cryptape
-    room: 2
+    room: B
     start: 09:00
     end: 12:00
   - title: RustBridge
-    room: 3
+    room: C
     start: 10:00
     end: 18:00
   - title: WebAssembly with wasm-bindgen
-    room: 1
+    room: A
     start: 13:00
     end: 17:00
   - title: Rapid Development of RESTful microservices using actix-web and diesel
-    room: 2
+    room: B
     start: 13:00
     end: 17:00
 - day: 4
   date: April 23
   items:
   - title: Build a Secure and Trusted Framework in Rust
-    room: 1
+    room: A
     start: 09:00
     end: 12:00
   - title: Thinking In Rust
-    room: 2
+    room: B
     start: 09:00
     end: 12:00
   - title: Learning Rust FFI
-    room: 3
+    room: C
     start: 09:00
     end: 10:30
   - title: Building a simple RESP parser
-    room: 3
+    room: C
     start: 10:30
     end: 12:00
   - title: Integrate rust-prometheus into your application
-    room: 1
+    room: A
     start: 13:00
     end: 17:00
   - title: Build a Decentralized app on Blockstack Chain V2
-    room: 2
+    room: B
     start: 13:00
     end: 17:00
   - title: Building a blockchain using Rust with Parity Substrate
-    room: 3
+    room: C
     start: 13:00
     end: 17:00

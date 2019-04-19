@@ -12,7 +12,7 @@
                     <td>{{ $slot.start }}</td>
                     <td>{{ $slot.end }}</td>
                     <td>
-                        <h4>{{ $slot.title }}</h4>
+                        <h4>{{ $slot.title }} {{ if $slot.room }} - Room {{ $slot.room }}{{ end }}</h4>
                     </td>
                 </tr>
                 {{ if $talk.abstract }}
